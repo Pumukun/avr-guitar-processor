@@ -1,0 +1,1264 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+                              (vfprintf)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+                              lib/arduino/map.o (__mulsi3)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                              lib/arduino/unolib.o (__udivmodhi4)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+                              lib/arduino/map.o (__divmodsi4)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+                              /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o) (__negsi2)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+                              /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o) (__muluhisi3)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__prologue_saves__)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__epilogue_restores__)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                              /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o) (__udivmodsi4)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+                              /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o) (__umulhisi3)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+                              lib/arduino/unolib.o (rand)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__ftoa_engine)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (strnlen_P)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (strnlen)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+                              lib/arduino/readLine.o (fgetc)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (fputc)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+                              lib/arduino/readLine.o (__iob)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+                              main.o (puts)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+                              lib/arduino/serialRead.o (scanf)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__ultoa_invert)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o) (vfscanf)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o) (isspace)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strchr_P.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o) (strchr_P)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o) (ungetc)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o) (__ctype_isfalse)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o) (__mulohisi3)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 lib/arduino/analogRead.o
+ .data          0x00000000        0x0 lib/arduino/analogRead.o
+ .bss           0x00000000        0x0 lib/arduino/analogRead.o
+ .text.initADC0
+                0x00000000       0x1c lib/arduino/analogRead.o
+ .text.analogRead
+                0x00000000       0x86 lib/arduino/analogRead.o
+ .debug_info    0x00000000       0xbd lib/arduino/analogRead.o
+ .debug_abbrev  0x00000000       0x8c lib/arduino/analogRead.o
+ .debug_loclists
+                0x00000000       0x38 lib/arduino/analogRead.o
+ .debug_aranges
+                0x00000000       0x28 lib/arduino/analogRead.o
+ .debug_rnglists
+                0x00000000       0x1a lib/arduino/analogRead.o
+ .debug_line    0x00000000      0x1d4 lib/arduino/analogRead.o
+ .debug_str     0x00000000      0x15c lib/arduino/analogRead.o
+ .debug_line_str
+                0x00000000       0x93 lib/arduino/analogRead.o
+ .comment       0x00000000       0x13 lib/arduino/analogRead.o
+ .debug_frame   0x00000000       0x3c lib/arduino/analogRead.o
+ .text          0x00000000        0x0 lib/arduino/analogWrite.o
+ .data          0x00000000        0x0 lib/arduino/analogWrite.o
+ .bss           0x00000000        0x0 lib/arduino/analogWrite.o
+ .text.clear_all_TC
+                0x00000000       0x16 lib/arduino/analogWrite.o
+ .text.analogWrite
+                0x00000000       0xe4 lib/arduino/analogWrite.o
+ .debug_info    0x00000000       0xc2 lib/arduino/analogWrite.o
+ .debug_abbrev  0x00000000       0x96 lib/arduino/analogWrite.o
+ .debug_loclists
+                0x00000000       0xbc lib/arduino/analogWrite.o
+ .debug_aranges
+                0x00000000       0x28 lib/arduino/analogWrite.o
+ .debug_rnglists
+                0x00000000       0x1a lib/arduino/analogWrite.o
+ .debug_line    0x00000000      0x370 lib/arduino/analogWrite.o
+ .debug_str     0x00000000      0x167 lib/arduino/analogWrite.o
+ .debug_line_str
+                0x00000000       0x96 lib/arduino/analogWrite.o
+ .comment       0x00000000       0x13 lib/arduino/analogWrite.o
+ .debug_frame   0x00000000       0x34 lib/arduino/analogWrite.o
+ .text          0x00000000        0x0 lib/arduino/button.o
+ .data          0x00000000        0x0 lib/arduino/button.o
+ .bss           0x00000000        0x0 lib/arduino/button.o
+ .text          0x00000000        0x0 lib/arduino/delay.o
+ .data          0x00000000        0x0 lib/arduino/delay.o
+ .bss           0x00000000        0x0 lib/arduino/delay.o
+ .text.delay    0x00000000       0x20 lib/arduino/delay.o
+ .debug_info    0x00000000      0x179 lib/arduino/delay.o
+ .debug_abbrev  0x00000000      0x148 lib/arduino/delay.o
+ .debug_loclists
+                0x00000000       0x76 lib/arduino/delay.o
+ .debug_aranges
+                0x00000000       0x20 lib/arduino/delay.o
+ .debug_rnglists
+                0x00000000       0x13 lib/arduino/delay.o
+ .debug_line    0x00000000       0xf4 lib/arduino/delay.o
+ .debug_str     0x00000000      0x1a2 lib/arduino/delay.o
+ .debug_line_str
+                0x00000000       0xa9 lib/arduino/delay.o
+ .comment       0x00000000       0x13 lib/arduino/delay.o
+ .debug_frame   0x00000000       0x24 lib/arduino/delay.o
+ .text          0x00000000        0x0 lib/arduino/digitalRead.o
+ .data          0x00000000        0x0 lib/arduino/digitalRead.o
+ .bss           0x00000000        0x0 lib/arduino/digitalRead.o
+ .text          0x00000000        0x0 lib/arduino/digitalWrite.o
+ .data          0x00000000        0x0 lib/arduino/digitalWrite.o
+ .bss           0x00000000        0x0 lib/arduino/digitalWrite.o
+ .text.digitalWrite
+                0x00000000       0x6c lib/arduino/digitalWrite.o
+ .debug_info    0x00000000      0x101 lib/arduino/digitalWrite.o
+ .debug_abbrev  0x00000000       0xc7 lib/arduino/digitalWrite.o
+ .debug_loclists
+                0x00000000       0xb4 lib/arduino/digitalWrite.o
+ .debug_aranges
+                0x00000000       0x20 lib/arduino/digitalWrite.o
+ .debug_rnglists
+                0x00000000       0x13 lib/arduino/digitalWrite.o
+ .debug_line    0x00000000      0x114 lib/arduino/digitalWrite.o
+ .debug_str     0x00000000      0x162 lib/arduino/digitalWrite.o
+ .debug_line_str
+                0x00000000       0xa2 lib/arduino/digitalWrite.o
+ .comment       0x00000000       0x13 lib/arduino/digitalWrite.o
+ .debug_frame   0x00000000       0x24 lib/arduino/digitalWrite.o
+ .text          0x00000000        0x0 lib/arduino/map.o
+ .data          0x00000000        0x0 lib/arduino/map.o
+ .bss           0x00000000        0x0 lib/arduino/map.o
+ .text.map      0x00000000       0x96 lib/arduino/map.o
+ .debug_info    0x00000000       0xdc lib/arduino/map.o
+ .debug_abbrev  0x00000000       0x8e lib/arduino/map.o
+ .debug_loclists
+                0x00000000       0xb2 lib/arduino/map.o
+ .debug_aranges
+                0x00000000       0x20 lib/arduino/map.o
+ .debug_rnglists
+                0x00000000       0x14 lib/arduino/map.o
+ .debug_line    0x00000000       0xb4 lib/arduino/map.o
+ .debug_str     0x00000000      0x158 lib/arduino/map.o
+ .debug_line_str
+                0x00000000       0x7e lib/arduino/map.o
+ .comment       0x00000000       0x13 lib/arduino/map.o
+ .debug_frame   0x00000000       0x78 lib/arduino/map.o
+ .text          0x00000000        0x0 lib/arduino/pinMode.o
+ .data          0x00000000        0x0 lib/arduino/pinMode.o
+ .bss           0x00000000        0x0 lib/arduino/pinMode.o
+ .text          0x00000000        0x0 lib/arduino/readLine.o
+ .data          0x00000000        0x0 lib/arduino/readLine.o
+ .bss           0x00000000        0x0 lib/arduino/readLine.o
+ .text.readLine
+                0x00000000       0x4c lib/arduino/readLine.o
+ .debug_info    0x00000000      0x1e4 lib/arduino/readLine.o
+ .debug_abbrev  0x00000000      0x165 lib/arduino/readLine.o
+ .debug_loclists
+                0x00000000       0x9e lib/arduino/readLine.o
+ .debug_aranges
+                0x00000000       0x20 lib/arduino/readLine.o
+ .debug_rnglists
+                0x00000000       0x1f lib/arduino/readLine.o
+ .debug_line    0x00000000      0x13b lib/arduino/readLine.o
+ .debug_str     0x00000000      0x190 lib/arduino/readLine.o
+ .debug_line_str
+                0x00000000       0x95 lib/arduino/readLine.o
+ .comment       0x00000000       0x13 lib/arduino/readLine.o
+ .debug_frame   0x00000000       0x40 lib/arduino/readLine.o
+ .text          0x00000000        0x0 lib/arduino/serialRead.o
+ .data          0x00000000        0x0 lib/arduino/serialRead.o
+ .bss           0x00000000        0x0 lib/arduino/serialRead.o
+ .rodata.serialRead.str1.1
+                0x00000000       0x1f lib/arduino/serialRead.o
+ .text.serialRead
+                0x00000000       0x66 lib/arduino/serialRead.o
+ .debug_info    0x00000000      0x143 lib/arduino/serialRead.o
+ .debug_abbrev  0x00000000       0xed lib/arduino/serialRead.o
+ .debug_loclists
+                0x00000000       0x20 lib/arduino/serialRead.o
+ .debug_aranges
+                0x00000000       0x20 lib/arduino/serialRead.o
+ .debug_rnglists
+                0x00000000       0x13 lib/arduino/serialRead.o
+ .debug_line    0x00000000       0xfa lib/arduino/serialRead.o
+ .debug_str     0x00000000      0x178 lib/arduino/serialRead.o
+ .debug_line_str
+                0x00000000       0xa4 lib/arduino/serialRead.o
+ .comment       0x00000000       0x13 lib/arduino/serialRead.o
+ .debug_frame   0x00000000       0x34 lib/arduino/serialRead.o
+ .text          0x00000000        0x0 lib/arduino/servo.o
+ .data          0x00000000        0x0 lib/arduino/servo.o
+ .bss           0x00000000        0x0 lib/arduino/servo.o
+ .text.init_servos
+                0x00000000        0x6 lib/arduino/servo.o
+ .text.set_servo
+                0x00000000       0x8c lib/arduino/servo.o
+ .text.move_servo
+                0x00000000       0x2e lib/arduino/servo.o
+ .bss.DDRn      0x00000000        0x2 lib/arduino/servo.o
+ .text          0x00000000        0x0 lib/arduino/sysclock.o
+ .data          0x00000000        0x0 lib/arduino/sysclock.o
+ .bss           0x00000000        0x0 lib/arduino/sysclock.o
+ .text.init_pulse_0
+                0x00000000       0x1a lib/arduino/sysclock.o
+ .text.init_sysclock_1
+                0x00000000       0x1c lib/arduino/sysclock.o
+ .text.ticks    0x00000000       0x10 lib/arduino/sysclock.o
+ .text.ticks_ro
+                0x00000000       0x10 lib/arduino/sysclock.o
+ .bss.sys_ctr_0
+                0x00000000        0x2 lib/arduino/sysclock.o
+ .text          0x00000000        0x0 lib/arduino/tinymt32.o
+ .data          0x00000000        0x0 lib/arduino/tinymt32.o
+ .bss           0x00000000        0x0 lib/arduino/tinymt32.o
+ .text.tinymt32_next_state
+                0x00000000      0x144 lib/arduino/tinymt32.o
+ .text.ini_func1
+                0x00000000       0x38 lib/arduino/tinymt32.o
+ .text.ini_func2
+                0x00000000       0x38 lib/arduino/tinymt32.o
+ .text.period_certification
+                0x00000000       0x88 lib/arduino/tinymt32.o
+ .text.tinymt32_init
+                0x00000000      0x110 lib/arduino/tinymt32.o
+ .text.tinymt32_init_by_array
+                0x00000000      0x43c lib/arduino/tinymt32.o
+ .debug_info    0x00000000      0x39f lib/arduino/tinymt32.o
+ .debug_abbrev  0x00000000      0x192 lib/arduino/tinymt32.o
+ .debug_loclists
+                0x00000000      0x3b4 lib/arduino/tinymt32.o
+ .debug_aranges
+                0x00000000       0x48 lib/arduino/tinymt32.o
+ .debug_rnglists
+                0x00000000       0x35 lib/arduino/tinymt32.o
+ .debug_line    0x00000000      0x8d0 lib/arduino/tinymt32.o
+ .debug_str     0x00000000      0x1fc lib/arduino/tinymt32.o
+ .debug_line_str
+                0x00000000       0x98 lib/arduino/tinymt32.o
+ .comment       0x00000000       0x13 lib/arduino/tinymt32.o
+ .debug_frame   0x00000000      0x154 lib/arduino/tinymt32.o
+ .text          0x00000000        0x0 lib/arduino/tone.o
+ .data          0x00000000        0x0 lib/arduino/tone.o
+ .bss           0x00000000        0x0 lib/arduino/tone.o
+ .text.noTone   0x00000000       0x30 lib/arduino/tone.o
+ .text.tone     0x00000000       0xda lib/arduino/tone.o
+ .text.tone_on  0x00000000       0xb0 lib/arduino/tone.o
+ .progmem.data.notes_OCR1A
+                0x00000000       0xb2 lib/arduino/tone.o
+ .progmem.data.notes_TCCR1B
+                0x00000000       0x59 lib/arduino/tone.o
+ .progmem.data.notes_OCR0A
+                0x00000000       0x59 lib/arduino/tone.o
+ .progmem.data.notes_TCCR0B
+                0x00000000       0x59 lib/arduino/tone.o
+ .progmem.data.notes_freq
+                0x00000000       0xb2 lib/arduino/tone.o
+ .bss.PORTport  0x00000000        0x2 lib/arduino/tone.o
+ .bss.DDRport   0x00000000        0x2 lib/arduino/tone.o
+ .text          0x00000000        0x0 lib/arduino/uart.o
+ .data          0x00000000        0x0 lib/arduino/uart.o
+ .bss           0x00000000        0x0 lib/arduino/uart.o
+ .text          0x00000000        0x0 lib/arduino/unolib.o
+ .data          0x00000000        0x0 lib/arduino/unolib.o
+ .bss           0x00000000        0x0 lib/arduino/unolib.o
+ .text.d_analogRead
+                0x00000000        0xe lib/arduino/unolib.o
+ .text.constrain8_t
+                0x00000000       0x10 lib/arduino/unolib.o
+ .text.constrain16_t
+                0x00000000       0x26 lib/arduino/unolib.o
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.mul
+                0x00000000       0x20 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x00000000       0x28 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x00000000       0x2e /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.div
+                0x00000000       0x10 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x00000000       0x16 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00000000       0x44 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x00000000       0x1e /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+ .data          0x00000000        0x4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+ .text.avr-libc
+                0x00000000       0xb8 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+ .comment       0x00000000       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+ .text.avr-libc
+                0x00000000       0x7e /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+ .comment       0x00000000       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fgetc.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+ .text.avr-libc
+                0x00000000       0x2c /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+ .comment       0x00000000       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(scanf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .text.avr-libc
+                0x00000000      0x502 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .progmem.data  0x00000000        0xc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .comment       0x00000000       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(vfscanf_std.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .text.avr-libc
+                0x00000000       0x12 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strchr_P.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strchr_P.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strchr_P.o)
+ .text.avr-libc
+                0x00000000       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strchr_P.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+ .text.avr-libc
+                0x00000000       0x30 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+ .comment       0x00000000       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ungetc.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .text.avr-libc
+                0x00000000        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.mul
+                0x00000000       0x10 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_mulshisi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw!x
+eeprom           0x00810000         0x00010000         rw!x
+fuse             0x00820000         0x00000003         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a
+LOAD main.o
+LOAD lib/arduino/analogRead.o
+LOAD lib/arduino/analogWrite.o
+LOAD lib/arduino/button.o
+LOAD lib/arduino/delay.o
+LOAD lib/arduino/digitalRead.o
+LOAD lib/arduino/digitalWrite.o
+LOAD lib/arduino/map.o
+LOAD lib/arduino/pinMode.o
+LOAD lib/arduino/readLine.o
+LOAD lib/arduino/serialRead.o
+LOAD lib/arduino/servo.o
+LOAD lib/arduino/sysclock.o
+LOAD lib/arduino/tinymt32.o
+LOAD lib/arduino/tone.o
+LOAD lib/arduino/uart.o
+LOAD lib/arduino/unolib.o
+START GROUP
+LOAD /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libatmega328p.a
+END GROUP
+                0x00020000                        __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x00800060                        __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                0x0000ffa0                        __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                        __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x16d0
+ *(.vectors)
+ .vectors       0x00000000       0x68 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                        . = ALIGN (0x2)
+                0x00000068                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ .progmem.data  0x00000068        0x8 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+ *libc.a:*(.progmem.data)
+ .progmem.data  0x00000070       0xfa /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+ *(.progmem.*)
+                0x0000016a                        . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000016a                        __ctors_start = .
+ *(.ctors)
+                0x0000016a                        __ctors_end = .
+                0x0000016a                        __dtors_start = .
+ *(.dtors)
+                0x0000016a                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x0000016a        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000016a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000016a        0xc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ .init3         0x00000176       0x18 lib/arduino/unolib.o
+                0x00000176                wdt_init
+ *(.init3)
+ *(.init4)
+ .init4         0x0000018e       0x16 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
+                0x0000018e                __do_copy_data
+ .init4         0x000001a4       0x10 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
+                0x000001a4                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000001b4        0x8 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000001bc        0x4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x000001bc                __vector_22
+                0x000001bc                __vector_1
+                0x000001bc                __vector_24
+                0x000001bc                __vector_12
+                0x000001bc                __bad_interrupt
+                0x000001bc                __vector_6
+                0x000001bc                __vector_3
+                0x000001bc                __vector_23
+                0x000001bc                __vector_25
+                0x000001bc                __vector_11
+                0x000001bc                __vector_17
+                0x000001bc                __vector_19
+                0x000001bc                __vector_5
+                0x000001bc                __vector_4
+                0x000001bc                __vector_9
+                0x000001bc                __vector_2
+                0x000001bc                __vector_21
+                0x000001bc                __vector_15
+                0x000001bc                __vector_8
+                0x000001bc                __vector_18
+                0x000001bc                __vector_20
+                0x000001c0                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.avr-libc
+                0x000001c0      0x6f0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+                0x000001c0                vfprintf
+ .text.print_effect
+                0x000008b0       0x3e main.o
+                0x000008b0                print_effect
+ .text.main     0x000008ee      0x28c main.o
+                0x000008ee                main
+ .text.__vector_10
+                0x00000b7a      0x14e main.o
+                0x00000b7a                __vector_10
+ .text.read_button
+                0x00000cc8       0x40 lib/arduino/button.o
+                0x00000cc8                read_button
+ .text.is_button_pressed
+                0x00000d08       0x4c lib/arduino/button.o
+                0x00000d08                is_button_pressed
+ .text.digitalRead
+                0x00000d54       0x5c lib/arduino/digitalRead.o
+                0x00000d54                digitalRead
+ .text.pinMode  0x00000db0       0xea lib/arduino/pinMode.o
+                0x00000db0                pinMode
+ .text.__vector_16
+                0x00000e9a       0x48 lib/arduino/sysclock.o
+                0x00000e9a                __vector_16
+ .text.__vector_14
+                0x00000ee2      0x2a2 lib/arduino/sysclock.o
+                0x00000ee2                __vector_14
+ .text.__vector_13
+                0x00001184       0x2e lib/arduino/sysclock.o
+                0x00001184                __vector_13
+ .text.__vector_7
+                0x000011b2       0xac lib/arduino/sysclock.o
+                0x000011b2                __vector_7
+ .text.init_sysclock_2
+                0x0000125e       0x28 lib/arduino/sysclock.o
+                0x0000125e                init_sysclock_2
+ .text.millis   0x00001286       0x18 lib/arduino/sysclock.o
+                0x00001286                millis
+ .text.uart_putchar
+                0x0000129e       0x24 lib/arduino/uart.o
+                0x0000129e                uart_putchar
+ .text.uart_getchar
+                0x000012c2       0x10 lib/arduino/uart.o
+                0x000012c2                uart_getchar
+ .text.uart_init
+                0x000012d2       0x22 lib/arduino/uart.o
+                0x000012d2                uart_init
+ .text.init_serial
+                0x000012f4       0x1a lib/arduino/uart.o
+                0x000012f4                init_serial
+ .text.libgcc.prologue
+                0x0000130e       0x38 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+                0x0000130e                __prologue_saves__
+ .text.libgcc.prologue
+                0x00001346       0x36 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+                0x00001346                __epilogue_restores__
+ .text.avr-libc
+                0x0000137c      0x1b0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+                0x0000137c                __ftoa_engine
+ .text.avr-libc
+                0x0000152c       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x0000152c                strnlen_P
+ .text.avr-libc
+                0x00001542       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x00001542                strnlen
+ .text.avr-libc
+                0x00001558       0x60 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                0x00001558                fputc
+ .text.avr-libc
+                0x000015b8       0x58 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+                0x000015b8                puts
+ .text.avr-libc
+                0x00001610       0xbc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x00001610                __ultoa_invert
+                0x000016cc                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000016cc        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+                0x000016cc                exit
+                0x000016cc                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000016cc        0x4 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x000016d0                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x000016d0                        _etext = .
+
+.data           0x00800100       0x44 load address 0x000016d0
+                0x00800100                        PROVIDE (__data_start = .)
+ *(.data)
+ *(.data*)
+ .data.bit_depth
+                0x00800100        0x1 main.o
+                0x00800100                bit_depth
+ .data.Delay_Depth
+                0x00800101        0x1 main.o
+                0x00800101                Delay_Depth
+ .data.distortion_threshold
+                0x00800102        0x2 main.o
+                0x00800102                distortion_threshold
+ .data.bounce_delay
+                0x00800104        0x1 lib/arduino/sysclock.o
+                0x00800104                bounce_delay
+ .data.uart_input
+                0x00800105        0xe lib/arduino/uart.o
+                0x00800105                uart_input
+ .data.uart_output
+                0x00800113        0xe lib/arduino/uart.o
+                0x00800113                uart_output
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.print_effect.str1.1
+                0x00800121       0x23 main.o
+                                 0x24 (size before relaxing)
+ *(.gnu.linkonce.r*)
+                0x00800144                        . = ALIGN (0x2)
+                0x00800144                        _edata = .
+                0x00800144                        PROVIDE (__data_end = .)
+
+.bss            0x00800144      0x108
+                0x00800144                        PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x00800144        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+                0x00800144                __iob
+ *(.bss*)
+ .bss.btn_tmr.0
+                0x0080014a        0x4 main.o
+ .bss.DelayCounter
+                0x0080014e        0x1 main.o
+                0x0080014e                DelayCounter
+ .bss.DelayBuffer
+                0x0080014f       0xc8 main.o
+                0x0080014f                DelayBuffer
+ .bss.output_effect
+                0x00800217        0x1 main.o
+                0x00800217                output_effect
+ .bss.aLastState
+                0x00800218        0x2 main.o
+                0x00800218                aLastState
+ .bss.aState    0x0080021a        0x2 main.o
+                0x0080021a                aState
+ .bss.counter   0x0080021c        0x2 main.o
+                0x0080021c                counter
+ .bss.input     0x0080021e        0x2 main.o
+                0x0080021e                input
+ .bss.ADC_high  0x00800220        0x2 main.o
+                0x00800220                ADC_high
+ .bss.ADC_low   0x00800222        0x2 main.o
+                0x00800222                ADC_low
+ .bss.button_history.0
+                0x00800224        0x2 lib/arduino/button.o
+ .bss.buttons   0x00800226        0x4 lib/arduino/button.o
+                0x00800226                buttons
+ .bss.servos    0x0080022a       0x18 lib/arduino/servo.o
+                0x0080022a                servos
+ .bss.iservo    0x00800242        0x1 lib/arduino/sysclock.o
+                0x00800242                iservo
+ .bss.sys_ctr_2
+                0x00800243        0x4 lib/arduino/sysclock.o
+                0x00800243                sys_ctr_2
+ .bss.ticks_ro_ctr
+                0x00800247        0x2 lib/arduino/sysclock.o
+                0x00800247                ticks_ro_ctr
+ .bss.PINbit    0x00800249        0x1 lib/arduino/tone.o
+                0x00800249                PINbit
+ .bss.PINport   0x0080024a        0x2 lib/arduino/tone.o
+                0x0080024a                PINport
+ *(COMMON)
+                0x0080024c                        PROVIDE (__bss_end = .)
+                0x000016d0                        __data_load_start = LOADADDR (.data)
+                0x00001714                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080024c        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x0080024c                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x12
+ *(.comment)
+ .comment       0x00000000       0x12 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 main.o
+ .comment       0x00000012       0x13 lib/arduino/button.o
+ .comment       0x00000012       0x13 lib/arduino/digitalRead.o
+ .comment       0x00000012       0x13 lib/arduino/pinMode.o
+ .comment       0x00000012       0x13 lib/arduino/servo.o
+ .comment       0x00000012       0x13 lib/arduino/sysclock.o
+ .comment       0x00000012       0x13 lib/arduino/tone.o
+ .comment       0x00000012       0x13 lib/arduino/uart.o
+ .comment       0x00000012       0x13 lib/arduino/unolib.o
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+ .comment       0x00000012       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1d0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 main.o
+ .debug_aranges
+                0x00000030       0x28 lib/arduino/button.o
+ .debug_aranges
+                0x00000058       0x20 lib/arduino/digitalRead.o
+ .debug_aranges
+                0x00000078       0x20 lib/arduino/pinMode.o
+ .debug_aranges
+                0x00000098       0x30 lib/arduino/servo.o
+ .debug_aranges
+                0x000000c8       0x68 lib/arduino/sysclock.o
+ .debug_aranges
+                0x00000130       0x30 lib/arduino/tone.o
+ .debug_aranges
+                0x00000160       0x38 lib/arduino/uart.o
+ .debug_aranges
+                0x00000198       0x38 lib/arduino/unolib.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1a75
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x435 main.o
+ .debug_info    0x00000a29      0x15f lib/arduino/button.o
+ .debug_info    0x00000b88       0x9d lib/arduino/digitalRead.o
+ .debug_info    0x00000c25       0xf6 lib/arduino/pinMode.o
+ .debug_info    0x00000d1b      0x1f9 lib/arduino/servo.o
+ .debug_info    0x00000f14      0x44e lib/arduino/sysclock.o
+ .debug_info    0x00001362      0x338 lib/arduino/tone.o
+ .debug_info    0x0000169a      0x21c lib/arduino/uart.o
+ .debug_info    0x000018b6      0x1bf lib/arduino/unolib.o
+
+.debug_abbrev   0x00000000     0x112a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x1b3 main.o
+ .debug_abbrev  0x00000755      0x120 lib/arduino/button.o
+ .debug_abbrev  0x00000875       0x68 lib/arduino/digitalRead.o
+ .debug_abbrev  0x000008dd       0xae lib/arduino/pinMode.o
+ .debug_abbrev  0x0000098b      0x14f lib/arduino/servo.o
+ .debug_abbrev  0x00000ada      0x222 lib/arduino/sysclock.o
+ .debug_abbrev  0x00000cfc      0x17a lib/arduino/tone.o
+ .debug_abbrev  0x00000e76      0x190 lib/arduino/uart.o
+ .debug_abbrev  0x00001006      0x124 lib/arduino/unolib.o
+
+.debug_line     0x00000000     0x1b67
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000001d      0x77f main.o
+ .debug_line    0x0000079c      0x1ae lib/arduino/button.o
+ .debug_line    0x0000094a       0xf2 lib/arduino/digitalRead.o
+ .debug_line    0x00000a3c      0x1dd lib/arduino/pinMode.o
+ .debug_line    0x00000c19      0x1d8 lib/arduino/servo.o
+ .debug_line    0x00000df1      0x5d4 lib/arduino/sysclock.o
+ .debug_line    0x000013c5      0x439 lib/arduino/tone.o
+ .debug_line    0x000017fe      0x1ce lib/arduino/uart.o
+ .debug_line    0x000019cc      0x19b lib/arduino/unolib.o
+
+.debug_frame    0x00000000      0x3dc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x78 main.o
+ .debug_frame   0x00000078       0x48 lib/arduino/button.o
+ .debug_frame   0x000000c0       0x24 lib/arduino/digitalRead.o
+ .debug_frame   0x000000e4       0x24 lib/arduino/pinMode.o
+ .debug_frame   0x00000108       0x58 lib/arduino/servo.o
+ .debug_frame   0x00000160      0x178 lib/arduino/sysclock.o
+ .debug_frame   0x000002d8       0x54 lib/arduino/tone.o
+ .debug_frame   0x0000032c       0x5c lib/arduino/uart.o
+ .debug_frame   0x00000388       0x54 lib/arduino/unolib.o
+
+.debug_str      0x00000000      0x714
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x50c main.o
+                                0x2a3 (size before relaxing)
+ .debug_str     0x00000714      0x18c lib/arduino/button.o
+ .debug_str     0x00000714      0x150 lib/arduino/digitalRead.o
+ .debug_str     0x00000714      0x171 lib/arduino/pinMode.o
+ .debug_str     0x00000714      0x1c3 lib/arduino/servo.o
+ .debug_str     0x00000714      0x2a0 lib/arduino/sysclock.o
+ .debug_str     0x00000714      0x1df lib/arduino/tone.o
+ .debug_str     0x00000714      0x1bf lib/arduino/uart.o
+ .debug_str     0x00000714      0x199 lib/arduino/unolib.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000      0x19e
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000      0x19e main.o
+                                 0xb3 (size before relaxing)
+ .debug_line_str
+                0x0000019e       0x90 lib/arduino/button.o
+ .debug_line_str
+                0x0000019e       0x96 lib/arduino/digitalRead.o
+ .debug_line_str
+                0x0000019e       0x93 lib/arduino/pinMode.o
+ .debug_line_str
+                0x0000019e       0x97 lib/arduino/servo.o
+ .debug_line_str
+                0x0000019e       0xcd lib/arduino/sysclock.o
+ .debug_line_str
+                0x0000019e       0x90 lib/arduino/tone.o
+ .debug_line_str
+                0x0000019e       0x89 lib/arduino/uart.o
+ .debug_line_str
+                0x0000019e       0xab lib/arduino/unolib.o
+
+.debug_loclists
+                0x00000000      0x786
+ *(.debug_loclists)
+ .debug_loclists
+                0x00000000       0x1c main.o
+ .debug_loclists
+                0x0000001c       0xa0 lib/arduino/button.o
+ .debug_loclists
+                0x000000bc       0x4e lib/arduino/digitalRead.o
+ .debug_loclists
+                0x0000010a      0x1da lib/arduino/pinMode.o
+ .debug_loclists
+                0x000002e4       0xd3 lib/arduino/servo.o
+ .debug_loclists
+                0x000003b7       0x68 lib/arduino/sysclock.o
+ .debug_loclists
+                0x0000041f      0x216 lib/arduino/tone.o
+ .debug_loclists
+                0x00000635       0x88 lib/arduino/uart.o
+ .debug_loclists
+                0x000006bd       0xc9 lib/arduino/unolib.o
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000      0x146
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000       0x30 main.o
+ .debug_rnglists
+                0x00000030       0x19 lib/arduino/button.o
+ .debug_rnglists
+                0x00000049       0x13 lib/arduino/digitalRead.o
+ .debug_rnglists
+                0x0000005c       0x14 lib/arduino/pinMode.o
+ .debug_rnglists
+                0x00000070       0x20 lib/arduino/servo.o
+ .debug_rnglists
+                0x00000090       0x4b lib/arduino/sysclock.o
+ .debug_rnglists
+                0x000000db       0x21 lib/arduino/tone.o
+ .debug_rnglists
+                0x000000fc       0x25 lib/arduino/uart.o
+ .debug_rnglists
+                0x00000121       0x25 lib/arduino/unolib.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
