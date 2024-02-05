@@ -1,4 +1,6 @@
 #include "Encoder.h"
+#include "unolib.h"
+#include "pinMode.h"
 
 typedef struct Encoder_flags {
     bool hold_f:        1;
@@ -34,6 +36,8 @@ typedef struct private_Encoder {
 
     uint8_t __encoder_state;
     uint32_t __debounce_timer;
+
+    uint8_t __prev_state;
 
 } private_Encoder;
 
@@ -76,6 +80,7 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 
 #ifndef NO_SWITCH
     prvt_encoder->__SW = p_sw;
+    pinMode(__SW, INPUT_PULLUP);
 #endif
 
     encoder->private_Encoder = (private_Encoder*)prvt_encoder;
@@ -102,6 +107,11 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 #endif
 
     encoder->reset                  = &__reset;
+
+    pinMode(__OUT_A, INPUT_PULLUP);
+    pinMode(__OUT_B, INPUT_PULLUP);
+
+    prvt_encoder->__prev_state = _readCLK() | (_readDT() << 1);
 
     return encoder;
 }
