@@ -1,6 +1,6 @@
 #include "Encoder.h"
-#include "unolib.h"
 #include "pinMode.h"
+#include "digitalRead.h"
 
 typedef struct Encoder_flags {
     bool hold_f:        1;
@@ -17,14 +17,14 @@ typedef struct Encoder_flags {
 } Encoder_flags;
 
 enum __state {
-    NO_SPIN     = 0;
-    LEFT        = 1;
-    RIGHT       = 2;
-    LEFT_HOLD   = 3;
-    RIGHT_HOLD  = 4;
-}
+    NO_SPIN     = 0,
+    LEFT        = 1,
+    RIGHT       = 2,
+    LEFT_HOLD   = 3,
+    RIGHT_HOLD  = 4
+};
 
-typedef struct private_Encoder {
+typedef struct Private_Encoder {
     uint8_t __OUT_A;
     uint8_t __OUT_B;
 
@@ -39,15 +39,15 @@ typedef struct private_Encoder {
 
     uint8_t __prev_state;
 
-} private_Encoder;
+} Private_Encoder;
 
 void __set_pin_mode(uint8_t p_mode);
 void __set_button_pin_mode(uint8_t p_mode);
 void __set_direction(uint8_t p_direction);
 
-void __is_turn();
-void __is_right();
-void __is_left();
+bool __is_turn();
+bool __is_right();
+bool __is_left();
 
 void __reset();
 
@@ -69,7 +69,7 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_sw) {
 #else
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 #endif
-    private_Encoder* prvt_encoder = malloc(sizeof(private_Encoder));
+    Private_Encoder* prvt_encoder = malloc(sizeof(Private_Encoder));
     Encoder* encoder = (Encoder*)malloc(sizeof(Encoder));
 
     prvt_encoder->__OUT_A = p_out_a;
@@ -80,10 +80,10 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 
 #ifndef NO_SWITCH
     prvt_encoder->__SW = p_sw;
-    pinMode(__SW, INPUT_PULLUP);
+    pinMode(prvt_encoder->__SW, INPUT_PULLUP);
 #endif
 
-    encoder->private_Encoder = (private_Encoder*)prvt_encoder;
+    encoder->private_Encoder = (Private_Encoder*)prvt_encoder;
 
     encoder->set_pin_mode           = &__set_pin_mode;
     encoder->set_button_pin_mode    = &__set_button_pin_mode;
@@ -108,15 +108,15 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 
     encoder->reset                  = &__reset;
 
-    pinMode(__OUT_A, INPUT_PULLUP);
-    pinMode(__OUT_B, INPUT_PULLUP);
+    pinMode(prvt_encoder->__OUT_A, INPUT_PULLUP);
+    pinMode(prvt_encoder->__OUT_B, INPUT_PULLUP);
 
-    prvt_encoder->__prev_state = _readCLK() | (_readDT() << 1);
+    prvt_encoder->__prev_state = digitalRead(prvt_encoder->__OUT_A);
 
     return encoder;
 }
 
-
+/*
 void __set_pin_mode(uint8_t p_mode) {
 
 }
@@ -129,15 +129,15 @@ void __set_direction(uint8_t p_direction) {
 
 }
 
-void __is_turn() {
+bool __is_turn() {
 
 }
 
-void __is_right() {
+bool __is_right() {
 
 }
 
-void __is_left() {
+bool __is_left() {
 
 }
 
@@ -178,5 +178,6 @@ bool __is_double() {
 
 }
 #endif
+*/
 
 

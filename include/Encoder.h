@@ -1,10 +1,12 @@
 #ifndef ENCODER_H
 #define ENCODER_H
 
+#include "unolib.h"
+
 #define NORMAL 0
 #define REVERSE 1
 
-typedef unsigned short bool;
+typedef short unsigned int bool;
 
 typedef struct Encoder {
     void* private_Encoder;

@@ -8,6 +8,8 @@
 #include "sysclock.h"
 #include "unolib.h"
 
+#include "Encoder.h"
+
 typedef uint8_t byte;
 
 #define USE_MICRO_WIRE
@@ -24,7 +26,6 @@ int16_t input;
 
 #define PUSHBUTTON_1 4
 #define PUSHBUTTON_2 2
-
 
 // ---- Encoder ----
 #define OUT_A 6
