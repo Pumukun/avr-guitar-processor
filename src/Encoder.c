@@ -69,7 +69,7 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_sw) {
 #else
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 #endif
-    Private_Encoder* prvt_encoder = malloc(sizeof(Private_Encoder));
+    Private_Encoder* prvt_encoder = (Private_Encoder*)malloc(sizeof(Private_Encoder));
     Encoder* encoder = (Encoder*)malloc(sizeof(Encoder));
 
     prvt_encoder->__OUT_A = p_out_a;
@@ -80,7 +80,9 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 
 #ifndef NO_SWITCH
     prvt_encoder->__SW = p_sw;
-    pinMode(prvt_encoder->__SW, INPUT_PULLUP);
+    if (p_sw != -1) {
+        pinMode(prvt_encoder->__SW, INPUT_PULLUP);
+    }
 #endif
 
     encoder->private_Encoder = (Private_Encoder*)prvt_encoder;
@@ -111,12 +113,11 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
     pinMode(prvt_encoder->__OUT_A, INPUT_PULLUP);
     pinMode(prvt_encoder->__OUT_B, INPUT_PULLUP);
 
-    prvt_encoder->__prev_state = digitalRead(prvt_encoder->__OUT_A);
+    prvt_encoder->__prev_state = digitalRead(prvt_encoder->__OUT_A) | (digitalRead(prvt_encoder->__OUT_B) << 1);
 
     return encoder;
 }
 
-/*
 void __set_pin_mode(uint8_t p_mode) {
 
 }
@@ -178,6 +179,4 @@ bool __is_double() {
 
 }
 #endif
-*/
-
 
