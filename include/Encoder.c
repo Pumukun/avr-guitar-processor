@@ -6,7 +6,6 @@ typedef struct Encoder_flags {
     bool is_turn_f:     1;
     bool is_left_f:     1;
     bool is_right_f:    1;
-    bool is_press_f:    1;
     bool is_release_f:  1;
     bool is_click_f:    1;
     bool is_holded_f:   1;
@@ -57,7 +56,6 @@ void __reset(Encoder* p_Encoder);
 bool __is_right_hold(Encoder* p_Encoder);
 bool __is_left_hold(Encoder* p_Encoder);
 
-bool __is_press(Encoder* p_Encoder);
 bool __is_release(Encoder* p_Encoder);
 bool __is_click(Encoder* p_Encoder);
 bool __is_holded(Encoder* p_Encoder);
@@ -103,7 +101,6 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
     encoder->is_right_hold          = &__is_right_hold;
     encoder->is_left_hold           = &__is_left_hold;
 
-    encoder->is_press               = &__is_press;
     encoder->is_release             = &__is_release;
     encoder->is_click               = &__is_click;
     encoder->is_holded              = &__is_holded;
@@ -170,7 +167,6 @@ void __reset(Encoder* p_Encoder) {
     ENC_PRIVATE->__flags.is_turn_f = false;
     ENC_PRIVATE->__flags.is_left_f = false;
     ENC_PRIVATE->__flags.is_right_f = false;
-    ENC_PRIVATE->__flags.is_press_f = false;
     ENC_PRIVATE->__flags.is_release_f = false;
     ENC_PRIVATE->__flags.is_click_f = false;
     ENC_PRIVATE->__flags.is_holded_f = false;
@@ -201,15 +197,6 @@ bool __is_left_hold(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_press(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
-    if (ENC_PRIVATE->__flags.is_press_f) {
-        ENC_PRIVATE->__flags.is_press_f = false;
-        return true;
-    }
-    return false;
-}
-
 bool __is_release(Encoder* p_Encoder) {
     p_Encoder->tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_release_f) {
@@ -220,7 +207,12 @@ bool __is_release(Encoder* p_Encoder) {
 }
 
 bool __is_click(Encoder* p_Encoder) {
-    return __is_release(p_Encoder); 
+    p_Encoder->tick(p_Encoder);
+    if (ENC_PRIVATE->__flags.is_click_f) {
+        ENC_PRIVATE->__flags.is_click_f = false;
+        return true;
+    }
+    return false;
 }
 
 bool __is_holded(Encoder* p_Encoder) {
@@ -268,13 +260,24 @@ void __tick(Encoder* p_Encoder) {
 
     uint8_t encoded = (MSB << 1) | LSB;
     uint8_t sum = (ENC_PRIVATE->__prev_state << 2) | encoded;
+
+    // button states
+    uint8_t btn_click_count = 0;
     
     if (!digitalRead(ENC_PRIVATE->__SW) && (debounce_delta > ENCODER_SW_DEBOUNCE)) {
-        ENC_PRIVATE->__flags.is_press_f = true;
+        btn_click_count++;
         ENC_PRIVATE->__flags.is_click_f = true;
-        
+
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__flags.is_turn_f = false;
+
+        if (btn_click_count == 1) {
+            ENC_PRIVATE->__flags.is_single_f = true;
+        }
+        if (btn_click_count == 2) {
+            ENC_PRIVATE->__flags.is_double_f = true;
+        }
+        btn_click_count = 0;
     }
 
     // check direction
@@ -285,6 +288,7 @@ void __tick(Encoder* p_Encoder) {
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__encoder_state = LEFT;
         if (!digitalRead(ENC_PRIVATE->__SW)) {
+            ENC_PRIVATE->__flags.is_holded_f = true;
             ENC_PRIVATE->__encoder_state = LEFT_HOLD;
         }
     } else if ((sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) && (debounce_delta > ENCODER_DEBOUNCE)) {
@@ -294,6 +298,7 @@ void __tick(Encoder* p_Encoder) {
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__encoder_state = RIGHT;
         if (!digitalRead(ENC_PRIVATE->__SW)) {
+            ENC_PRIVATE->__flags.is_holded_f = true;
             ENC_PRIVATE->__encoder_state = RIGHT_HOLD;
         }
     }

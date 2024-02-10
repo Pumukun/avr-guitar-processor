@@ -154,6 +154,9 @@ int main(void) {
             output_effect = output_effect % 4;
             print_effect();
         }
+
+        if (enc->is_single(enc)) printf("single\n");
+        if (enc->is_double(enc)) printf("double\n");
         
         /*
         if (enc->is_press(enc)) {
