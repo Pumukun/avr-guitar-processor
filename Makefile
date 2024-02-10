@@ -48,7 +48,7 @@ TARGET = main
 #  and in LIBDIR.  If you have any other (sub-)directories with code,
 #  you can add them in to SOURCES below in the wildcard statement.
 # See Note re: CPPFLAGS if using/not using LIBDIR
-SOURCES=$(wildcard *.c $(LIBDIR)/*.c)
+SOURCES=$(wildcard *.c $(LIBDIR)/*.c) $(wildcard *.c include/*.c)
 OBJECTS=$(SOURCES:.c=.o)
 HEADERS=$(SOURCES:.c=.h)
 

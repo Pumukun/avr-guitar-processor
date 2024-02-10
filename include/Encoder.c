@@ -1,6 +1,4 @@
 #include "Encoder.h"
-#include "pinMode.h"
-#include "digitalRead.h"
 
 #define ENC_PRIVATE ((Private_Encoder*)(p_Encoder->private_Encoder))
 
@@ -149,6 +147,8 @@ bool __is_turn(Encoder* p_Encoder) {
 bool __is_right(Encoder* p_Encoder) {
     p_Encoder->tick(p_Encoder);
     if (ENC_PRIVATE->__encoder_state == RIGHT) {
+        printf("right\n");
+
         ENC_PRIVATE->__encoder_state = NO_SPIN;
         return true;
     }
@@ -158,6 +158,8 @@ bool __is_right(Encoder* p_Encoder) {
 bool __is_left(Encoder* p_Encoder) {
     p_Encoder->tick(p_Encoder);
     if (ENC_PRIVATE->__encoder_state == LEFT) {
+        printf("left\n");
+
         ENC_PRIVATE->__encoder_state = NO_SPIN;
         return true;
     }
@@ -278,16 +280,16 @@ void __tick(Encoder* p_Encoder) {
     // check direction
     if ((sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) && (debounce_delta > ENCODER_DEBOUNCE)) {
         ENC_PRIVATE->__flags.is_turn_f = true;
-        ENC_PRIVATE->__flags.is_right_f = true;
-        
-        ENC_PRIVATE->__debounce_timer = tmp_millis;
-        ENC_PRIVATE->__encoder_state = RIGHT;
-    } else if ((sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) && (debounce_delta > ENCODER_DEBOUNCE)) {
-        ENC_PRIVATE->__flags.is_turn_f = true; 
         ENC_PRIVATE->__flags.is_left_f = true;
         
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__encoder_state = LEFT;
+    } else if ((sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) && (debounce_delta > ENCODER_DEBOUNCE)) {
+        ENC_PRIVATE->__flags.is_turn_f = true; 
+        ENC_PRIVATE->__flags.is_right_f = true;
+        
+        ENC_PRIVATE->__debounce_timer = tmp_millis;
+        ENC_PRIVATE->__encoder_state = RIGHT;
     }
 
     // save new last state

@@ -34,8 +34,6 @@ int16_t input;
 
 // ---- Encoder vars ----
 volatile int counter = 0;
-int aState;
-int aLastState;
 
 typedef enum Effect : uint8_t {
     CLEAN,
@@ -82,7 +80,7 @@ void print_effect() {
     oled.println(counter);
     oled.update();
     */
-    printf("%s\n", effect_label);
+    printf("e: %s\nc: %d\n", effect_label, counter);
 }
 
 int main(void) {
@@ -92,9 +90,8 @@ int main(void) {
     pinMode(PUSHBUTTON_1, INPUT_PULLUP);
     pinMode(PUSHBUTTON_2, INPUT_PULLUP);
 
-    pinMode(OUT_A,INPUT);
-    pinMode(OUT_B,INPUT);
-    pinMode(SW, INPUT_PULLUP);
+    Encoder* enc = new_encoder(OUT_A, OUT_B, SW);
+    //enc->tick(enc);
 
     // setup ADC- configured to be reading automatically the hole time.
     ADMUX = 0x60; // left adjust, adc0, internal vcc
@@ -113,9 +110,9 @@ int main(void) {
     output_effect = CLEAN;
     print_effect();
 
-    aLastState = digitalRead(OUT_A);
-
     while(1) {
+        enc->tick(enc);
+        
         static uint32_t btn_tmr;
         if (!digitalRead(PUSHBUTTON_1) && millis() - btn_tmr >= 500) {
             btn_tmr = millis();
@@ -129,32 +126,23 @@ int main(void) {
             print_effect();
         }
 
-        aState = digitalRead(OUT_A);
-  
-        if (aState != aLastState && millis() - btn_tmr >= 300) {
-            btn_tmr = millis();
-            if (digitalRead(OUT_B) != aState) { 
-                counter = counter - 1;
-                output_effect = output_effect - 1;
-                output_effect = output_effect % 4;
-                print_effect();
-            } else {
-                counter = counter + 1;
-                output_effect = output_effect + 1;
-                output_effect = output_effect % 4;
-                print_effect();
-            }
-            if (counter >=30 ) {
-                counter = 0;
-            }   
+        if (enc->is_left(enc)) { 
+            counter = counter - 1;
+            output_effect = output_effect - 1;
+            output_effect = output_effect % 4;
+            print_effect();
         }
-        aLastState = aState;
-
-        if (!digitalRead(SW) && millis() - btn_tmr >= 500) {
+        if (enc->is_right(enc)) {
+            counter = counter + 1;
+            output_effect = output_effect + 1;
+            output_effect = output_effect % 4;
+            print_effect();
+        }        
+        
+        if (enc->is_press(enc)) {
             output_effect = CLEAN;
             counter = 0;
             print_effect();
-            btn_tmr = millis();
         }
     }
 }

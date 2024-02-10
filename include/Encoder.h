@@ -2,12 +2,15 @@
 #define ENCODER_H
 
 #include "unolib.h"
+#include "pinMode.h"
+#include "digitalRead.h"
+#include "sysclock.h"
 
 #define NORMAL 0
 #define REVERSE 1
 
-#define ENCODER_DEBOUNCE 500
-#define ENCODER_BUTTON_DEBOUNCE 80
+#define ENCODER_DEBOUNCE 400
+#define ENCODER_SW_DEBOUNCE 500
 
 #define true 1
 #define false 0
