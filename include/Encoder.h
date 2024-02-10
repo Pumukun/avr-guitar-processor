@@ -6,6 +6,9 @@
 #define NORMAL 0
 #define REVERSE 1
 
+#define ENCODER_DEBOUNCE 500
+#define ENCODER_BUTTON_DEBOUNCE 80
+
 #define true 1
 #define false 0
 

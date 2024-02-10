@@ -119,7 +119,7 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
     pinMode(prvt_encoder->__OUT_A, INPUT_PULLUP);
     pinMode(prvt_encoder->__OUT_B, INPUT_PULLUP);
 
-    prvt_encoder->__prev_state = digitalRead(prvt_encoder->__OUT_A) | (digitalRead(prvt_encoder->__OUT_B) << 1);
+    prvt_encoder->__prev_state = (digitalRead(prvt_encoder->__OUT_A) << 1) | digitalRead(prvt_encoder->__OUT_B);
 
     return encoder;
 }
@@ -252,7 +252,45 @@ bool __is_double(Encoder* p_Encoder) {
 
 /* ==== main encoder logic ==== */
 void __tick(Encoder* p_Encoder) {
-    if ()
-    return;
+    uint32_t tmp_millis = millis();
+    uint32_t debounce_delta = tmp_millis - ENC_PRIVATE->__debounce_timer;
+
+    // reset flags
+    ENC_PRIVATE->__flags.is_release_f = true;
+    ENC_PRIVATE->__flags.is_click_f = false;
+    ENC_PRIVATE->__flags.is_holded_f = false;
+
+    // read encoder
+    uint8_t MSB = digitalRead(ENC_PRIVATE->__OUT_A);
+    uint8_t LSB = digitalRead(ENC_PRIVATE->__OUT_B);
+
+    uint8_t encoded = (MSB << 1) | LSB;
+    uint8_t sum = (ENC_PRIVATE->__prev_state << 2) | encoded;
+    
+    if (!digitalRead(ENC_PRIVATE->__SW) && (debounce_delta >= ENCODER_SW_DEBOUNCE)) {
+        ENC_PRIVATE->__flags.is_press_f = true;
+        ENC_PRIVATE->__flags.is_click_f = true;
+        
+        ENC_PRIVATE->__debounce_timer = tmp_millis;
+        ENC_PRIVATE->__flags.is_turn_f = false;
+    }
+
+    // check direction
+    if ((sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) && (debounce_delta > ENCODER_DEBOUNCE)) {
+        ENC_PRIVATE->__flags.is_turn_f = true;
+        ENC_PRIVATE->__flags.is_right_f = true;
+        
+        ENC_PRIVATE->__debounce_timer = tmp_millis;
+        ENC_PRIVATE->__encoder_state = RIGHT;
+    } else if ((sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) && (debounce_delta > ENCODER_DEBOUNCE)) {
+        ENC_PRIVATE->__flags.is_turn_f = true; 
+        ENC_PRIVATE->__flags.is_left_f = true;
+        
+        ENC_PRIVATE->__debounce_timer = tmp_millis;
+        ENC_PRIVATE->__encoder_state = LEFT;
+    }
+
+    // save new last state
+    ENC_PRIVATE->__prev_state = encoded;
 }
 

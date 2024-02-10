@@ -87,7 +87,7 @@ Discarded input sections
  .debug_line    0x00000000      0x1d4 lib/arduino/analogRead.o
  .debug_str     0x00000000      0x15c lib/arduino/analogRead.o
  .debug_line_str
-                0x00000000       0xad lib/arduino/analogRead.o
+                0x00000000       0x93 lib/arduino/analogRead.o
  .comment       0x00000000       0x13 lib/arduino/analogRead.o
  .debug_frame   0x00000000       0x3c lib/arduino/analogRead.o
  .text          0x00000000        0x0 lib/arduino/analogWrite.o
@@ -108,7 +108,7 @@ Discarded input sections
  .debug_line    0x00000000      0x370 lib/arduino/analogWrite.o
  .debug_str     0x00000000      0x167 lib/arduino/analogWrite.o
  .debug_line_str
-                0x00000000       0xb0 lib/arduino/analogWrite.o
+                0x00000000       0x96 lib/arduino/analogWrite.o
  .comment       0x00000000       0x13 lib/arduino/analogWrite.o
  .debug_frame   0x00000000       0x34 lib/arduino/analogWrite.o
  .text          0x00000000        0x0 lib/arduino/button.o
@@ -129,7 +129,7 @@ Discarded input sections
  .debug_line    0x00000000       0xf4 lib/arduino/delay.o
  .debug_str     0x00000000      0x1a2 lib/arduino/delay.o
  .debug_line_str
-                0x00000000       0xc3 lib/arduino/delay.o
+                0x00000000       0xa9 lib/arduino/delay.o
  .comment       0x00000000       0x13 lib/arduino/delay.o
  .debug_frame   0x00000000       0x24 lib/arduino/delay.o
  .text          0x00000000        0x0 lib/arduino/digitalRead.o
@@ -151,7 +151,7 @@ Discarded input sections
  .debug_line    0x00000000      0x114 lib/arduino/digitalWrite.o
  .debug_str     0x00000000      0x162 lib/arduino/digitalWrite.o
  .debug_line_str
-                0x00000000       0xbc lib/arduino/digitalWrite.o
+                0x00000000       0xa2 lib/arduino/digitalWrite.o
  .comment       0x00000000       0x13 lib/arduino/digitalWrite.o
  .debug_frame   0x00000000       0x24 lib/arduino/digitalWrite.o
  .text          0x00000000        0x0 lib/arduino/map.o
@@ -169,7 +169,7 @@ Discarded input sections
  .debug_line    0x00000000       0xb4 lib/arduino/map.o
  .debug_str     0x00000000      0x158 lib/arduino/map.o
  .debug_line_str
-                0x00000000       0x98 lib/arduino/map.o
+                0x00000000       0x7e lib/arduino/map.o
  .comment       0x00000000       0x13 lib/arduino/map.o
  .debug_frame   0x00000000       0x78 lib/arduino/map.o
  .text          0x00000000        0x0 lib/arduino/pinMode.o
@@ -191,7 +191,7 @@ Discarded input sections
  .debug_line    0x00000000      0x13b lib/arduino/readLine.o
  .debug_str     0x00000000      0x190 lib/arduino/readLine.o
  .debug_line_str
-                0x00000000       0xaf lib/arduino/readLine.o
+                0x00000000       0x95 lib/arduino/readLine.o
  .comment       0x00000000       0x13 lib/arduino/readLine.o
  .debug_frame   0x00000000       0x40 lib/arduino/readLine.o
  .text          0x00000000        0x0 lib/arduino/serialRead.o
@@ -212,7 +212,7 @@ Discarded input sections
  .debug_line    0x00000000       0xfa lib/arduino/serialRead.o
  .debug_str     0x00000000      0x178 lib/arduino/serialRead.o
  .debug_line_str
-                0x00000000       0xbe lib/arduino/serialRead.o
+                0x00000000       0xa4 lib/arduino/serialRead.o
  .comment       0x00000000       0x13 lib/arduino/serialRead.o
  .debug_frame   0x00000000       0x34 lib/arduino/serialRead.o
  .text          0x00000000        0x0 lib/arduino/servo.o
@@ -263,7 +263,7 @@ Discarded input sections
  .debug_line    0x00000000      0x8d0 lib/arduino/tinymt32.o
  .debug_str     0x00000000      0x1fc lib/arduino/tinymt32.o
  .debug_line_str
-                0x00000000       0xb2 lib/arduino/tinymt32.o
+                0x00000000       0x98 lib/arduino/tinymt32.o
  .comment       0x00000000       0x13 lib/arduino/tinymt32.o
  .debug_frame   0x00000000      0x154 lib/arduino/tinymt32.o
  .text          0x00000000        0x0 lib/arduino/tone.o
@@ -1183,27 +1183,27 @@ END GROUP
  *(.debug_addr)
 
 .debug_line_str
-                0x00000000      0x1ab
+                0x00000000      0x19e
  *(.debug_line_str)
  .debug_line_str
-                0x00000000      0x1ab main.o
-                                 0xcd (size before relaxing)
+                0x00000000      0x19e main.o
+                                 0xb3 (size before relaxing)
  .debug_line_str
-                0x000001ab       0xaa lib/arduino/button.o
+                0x0000019e       0x90 lib/arduino/button.o
  .debug_line_str
-                0x000001ab       0xb0 lib/arduino/digitalRead.o
+                0x0000019e       0x96 lib/arduino/digitalRead.o
  .debug_line_str
-                0x000001ab       0xad lib/arduino/pinMode.o
+                0x0000019e       0x93 lib/arduino/pinMode.o
  .debug_line_str
-                0x000001ab       0xb1 lib/arduino/servo.o
+                0x0000019e       0x97 lib/arduino/servo.o
  .debug_line_str
-                0x000001ab       0xe7 lib/arduino/sysclock.o
+                0x0000019e       0xcd lib/arduino/sysclock.o
  .debug_line_str
-                0x000001ab       0xaa lib/arduino/tone.o
+                0x0000019e       0x90 lib/arduino/tone.o
  .debug_line_str
-                0x000001ab       0xa3 lib/arduino/uart.o
+                0x0000019e       0x89 lib/arduino/uart.o
  .debug_line_str
-                0x000001ab       0xc5 lib/arduino/unolib.o
+                0x0000019e       0xab lib/arduino/unolib.o
 
 .debug_loclists
                 0x00000000      0x786
