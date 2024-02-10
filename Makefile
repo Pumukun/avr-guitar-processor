@@ -133,6 +133,7 @@ all_clean:
 
 LIB_clean:
 	rm -f $(LIBDIR)/*.o
+	rm -rf include/*.o
 
 ##########------------------------------------------------------##########
 ##########              Programmer-specific details             ##########
