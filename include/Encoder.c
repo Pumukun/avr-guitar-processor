@@ -269,7 +269,7 @@ void __tick(Encoder* p_Encoder) {
     uint8_t encoded = (MSB << 1) | LSB;
     uint8_t sum = (ENC_PRIVATE->__prev_state << 2) | encoded;
     
-    if (!digitalRead(ENC_PRIVATE->__SW) && (debounce_delta >= ENCODER_SW_DEBOUNCE)) {
+    if (!digitalRead(ENC_PRIVATE->__SW) && (debounce_delta > ENCODER_SW_DEBOUNCE)) {
         ENC_PRIVATE->__flags.is_press_f = true;
         ENC_PRIVATE->__flags.is_click_f = true;
         
@@ -284,14 +284,20 @@ void __tick(Encoder* p_Encoder) {
         
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__encoder_state = LEFT;
+        if (!digitalRead(ENC_PRIVATE->__SW)) {
+            ENC_PRIVATE->__encoder_state = LEFT_HOLD;
+        }
     } else if ((sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) && (debounce_delta > ENCODER_DEBOUNCE)) {
         ENC_PRIVATE->__flags.is_turn_f = true; 
         ENC_PRIVATE->__flags.is_right_f = true;
         
         ENC_PRIVATE->__debounce_timer = tmp_millis;
         ENC_PRIVATE->__encoder_state = RIGHT;
+        if (!digitalRead(ENC_PRIVATE->__SW)) {
+            ENC_PRIVATE->__encoder_state = RIGHT_HOLD;
+        }
     }
-
+    
     // save new last state
     ENC_PRIVATE->__prev_state = encoded;
 }

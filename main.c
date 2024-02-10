@@ -8,6 +8,8 @@
 #include "sysclock.h"
 #include "unolib.h"
 
+#include "SSD1306.h"
+
 #include "Encoder.h"
 
 typedef uint8_t byte;
@@ -73,13 +75,11 @@ void print_effect() {
             effect_label = "bit crusher";
             break;
     }
-    /*
-    oled.clear();
-    oled.home();
-    oled.println(effect_label);
-    oled.println(counter);
-    oled.update();
-    */
+    
+    OLED_Clear();
+    OLED_SetCursor(0, 0);
+    OLED_Printf("%s\n%d\n", effect_label, counter);
+    
     printf("e: %s\nc: %d\n", effect_label, counter);
 }
 
@@ -87,11 +87,13 @@ int main(void) {
     init_serial();
     init_sysclock_2();
 
+    OLED_Init();
+    OLED_Clear();
+
     pinMode(PUSHBUTTON_1, INPUT_PULLUP);
     pinMode(PUSHBUTTON_2, INPUT_PULLUP);
 
     Encoder* enc = new_encoder(OUT_A, OUT_B, SW);
-    //enc->tick(enc);
 
     // setup ADC- configured to be reading automatically the hole time.
     ADMUX = 0x60; // left adjust, adc0, internal vcc
@@ -105,6 +107,7 @@ int main(void) {
     ICR1H = (PWM_FREQ >> 8);
     ICR1L = (PWM_FREQ & 0xff);
     DDRB |= ((PWM_QTY << 1) | 0x02); // turn on outputs
+    
     sei();
 
     output_effect = CLEAN;
@@ -112,7 +115,7 @@ int main(void) {
 
     while(1) {
         enc->tick(enc);
-        
+
         static uint32_t btn_tmr;
         if (!digitalRead(PUSHBUTTON_1) && millis() - btn_tmr >= 500) {
             btn_tmr = millis();
@@ -137,13 +140,28 @@ int main(void) {
             output_effect = output_effect + 1;
             output_effect = output_effect % 4;
             print_effect();
-        }        
+        }
+
+        if (enc->is_left_hold(enc)) {
+            counter = counter - 5;
+            output_effect = output_effect - 1;
+            output_effect = output_effect % 4;
+            print_effect();
+        }
+        if (enc->is_right_hold(enc)) {
+            counter = counter + 5;
+            output_effect = output_effect + 1;
+            output_effect = output_effect % 4;
+            print_effect();
+        }
         
+        /*
         if (enc->is_press(enc)) {
             output_effect = CLEAN;
             counter = 0;
             print_effect();
         }
+        */
     }
 }
 

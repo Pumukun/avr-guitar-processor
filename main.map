@@ -6,12 +6,16 @@ Archive member included to satisfy reference by file (symbol)
                               lib/arduino/map.o (__mulsi3)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
                               lib/arduino/unolib.o (__udivmodhi4)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                              lib/ssd1306/SSD1306.o (__udivmodsi4)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
                               lib/arduino/map.o (__divmodsi4)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_negsi2.o)
                               /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o) (__negsi2)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+                              lib/ssd1306/SSD1306.o (__tablejump2__)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
                               main.o (__do_copy_data)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_clear_bss.o)
@@ -22,10 +26,34 @@ Archive member included to satisfy reference by file (symbol)
                               /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__prologue_saves__)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
                               /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o) (__epilogue_restores__)
-/usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
-                              /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o) (__udivmodsi4)
 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
                               /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_muluhisi3.o) (__umulhisi3)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                              lib/ssd1306/SSD1306.o (__subsf3)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              lib/ssd1306/SSD1306.o (__fixunssfsi)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              lib/ssd1306/SSD1306.o (__floatunsisf)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              lib/ssd1306/SSD1306.o (__mulsf3)
+/usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
                               include/Encoder.o (malloc)
 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
@@ -300,6 +328,32 @@ Discarded input sections
                 0x00000000       0x10 lib/arduino/unolib.o
  .text.constrain16_t
                 0x00000000       0x26 lib/arduino/unolib.o
+ .text          0x00000000        0x0 lib/i2c/i2c.o
+ .data          0x00000000        0x0 lib/i2c/i2c.o
+ .bss           0x00000000        0x0 lib/i2c/i2c.o
+ .text.i2c_timeout
+                0x00000000       0x1a lib/i2c/i2c.o
+ .text.i2c_rx_byte
+                0x00000000       0x30 lib/i2c/i2c.o
+ .text          0x00000000        0x0 lib/ssd1306/SSD1306.o
+ .data          0x00000000        0x0 lib/ssd1306/SSD1306.o
+ .bss           0x00000000        0x0 lib/ssd1306/SSD1306.o
+ .text.OLED_ScrollMessage
+                0x00000000       0xd8 lib/ssd1306/SSD1306.o
+ .text.OLED_GoToLine
+                0x00000000       0x12 lib/ssd1306/SSD1306.o
+ .text.OLED_DisplayLogo
+                0x00000000       0x46 lib/ssd1306/SSD1306.o
+ .text.OLED_VerticalGraph
+                0x00000000       0xa4 lib/ssd1306/SSD1306.o
+ .text.OLED_HorizontalGraph
+                0x00000000       0x62 lib/ssd1306/SSD1306.o
+ .text.OLED_EnableInversion
+                0x00000000        0x8 lib/ssd1306/SSD1306.o
+ .text.OLED_DisableInversion
+                0x00000000        0x8 lib/ssd1306/SSD1306.o
+ .text.OLED_SetBrightness
+                0x00000000       0x14 lib/ssd1306/SSD1306.o
  .text          0x00000000        0x0 include/Encoder.o
  .data          0x00000000        0x0 include/Encoder.o
  .bss           0x00000000        0x0 include/Encoder.o
@@ -335,6 +389,20 @@ Discarded input sections
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
  .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
  .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_divmodsi4.o)
@@ -383,6 +451,21 @@ Discarded input sections
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
  .text.libgcc.fixed
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
  .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
  .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_copy_data.o)
@@ -459,22 +542,6 @@ Discarded input sections
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
  .text.libgcc.fixed
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
- .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.mul
-                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x44 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc   0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.prologue
-                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.builtins
-                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.fmul
-                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
- .text.libgcc.fixed
-                0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
  .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
  .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
@@ -491,6 +558,45 @@ Discarded input sections
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
                 0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
  .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
  .text          0x00000000        0x0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
  .data          0x00000000        0x4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(rand.o)
@@ -613,6 +719,8 @@ LOAD lib/arduino/tinymt32.o
 LOAD lib/arduino/tone.o
 LOAD lib/arduino/uart.o
 LOAD lib/arduino/unolib.o
+LOAD lib/i2c/i2c.o
+LOAD lib/ssd1306/SSD1306.o
 LOAD include/Encoder.o
 START GROUP
 LOAD /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a
@@ -719,7 +827,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1e1a
+.text           0x00000000     0x2a38
  *(.vectors)
  .vectors       0x00000000       0x68 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000                __vectors
@@ -807,138 +915,241 @@ END GROUP
                 0x000001c0      0x6f0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libprintf_flt.a(vfprintf_flt.o)
                 0x000001c0                vfprintf
  .text.print_effect
-                0x000008b0       0x62 main.o
+                0x000008b0       0x96 main.o
                 0x000008b0                print_effect
- .text.main     0x00000912      0x1c0 main.o
-                0x00000912                main
+ .text.main     0x00000946      0x21e main.o
+                0x00000946                main
  .text.__vector_10
-                0x00000ad2      0x14e main.o
-                0x00000ad2                __vector_10
+                0x00000b64      0x14e main.o
+                0x00000b64                __vector_10
  .text.read_button
-                0x00000c20       0x40 lib/arduino/button.o
-                0x00000c20                read_button
+                0x00000cb2       0x40 lib/arduino/button.o
+                0x00000cb2                read_button
  .text.is_button_pressed
-                0x00000c60       0x4c lib/arduino/button.o
-                0x00000c60                is_button_pressed
+                0x00000cf2       0x4c lib/arduino/button.o
+                0x00000cf2                is_button_pressed
  .text.digitalRead
-                0x00000cac       0x5c lib/arduino/digitalRead.o
-                0x00000cac                digitalRead
- .text.pinMode  0x00000d08       0xea lib/arduino/pinMode.o
-                0x00000d08                pinMode
+                0x00000d3e       0x5c lib/arduino/digitalRead.o
+                0x00000d3e                digitalRead
+ .text.pinMode  0x00000d9a       0xea lib/arduino/pinMode.o
+                0x00000d9a                pinMode
  .text.__vector_16
-                0x00000df2       0x48 lib/arduino/sysclock.o
-                0x00000df2                __vector_16
+                0x00000e84       0x48 lib/arduino/sysclock.o
+                0x00000e84                __vector_16
  .text.__vector_14
-                0x00000e3a      0x2a2 lib/arduino/sysclock.o
-                0x00000e3a                __vector_14
+                0x00000ecc      0x2a2 lib/arduino/sysclock.o
+                0x00000ecc                __vector_14
  .text.__vector_13
-                0x000010dc       0x2e lib/arduino/sysclock.o
-                0x000010dc                __vector_13
+                0x0000116e       0x2e lib/arduino/sysclock.o
+                0x0000116e                __vector_13
  .text.__vector_7
-                0x0000110a       0xac lib/arduino/sysclock.o
-                0x0000110a                __vector_7
+                0x0000119c       0xac lib/arduino/sysclock.o
+                0x0000119c                __vector_7
  .text.init_sysclock_2
-                0x000011b6       0x28 lib/arduino/sysclock.o
-                0x000011b6                init_sysclock_2
- .text.millis   0x000011de       0x18 lib/arduino/sysclock.o
-                0x000011de                millis
+                0x00001248       0x28 lib/arduino/sysclock.o
+                0x00001248                init_sysclock_2
+ .text.millis   0x00001270       0x18 lib/arduino/sysclock.o
+                0x00001270                millis
  .text.uart_putchar
-                0x000011f6       0x24 lib/arduino/uart.o
-                0x000011f6                uart_putchar
+                0x00001288       0x24 lib/arduino/uart.o
+                0x00001288                uart_putchar
  .text.uart_getchar
-                0x0000121a       0x10 lib/arduino/uart.o
-                0x0000121a                uart_getchar
+                0x000012ac       0x10 lib/arduino/uart.o
+                0x000012ac                uart_getchar
  .text.uart_init
-                0x0000122a       0x22 lib/arduino/uart.o
-                0x0000122a                uart_init
+                0x000012bc       0x22 lib/arduino/uart.o
+                0x000012bc                uart_init
  .text.init_serial
-                0x0000124c       0x1a lib/arduino/uart.o
-                0x0000124c                init_serial
+                0x000012de       0x1a lib/arduino/uart.o
+                0x000012de                init_serial
+ .text.i2c_init
+                0x000012f8       0x12 lib/i2c/i2c.o
+                0x000012f8                i2c_init
+ .text.i2c_tx_start
+                0x0000130a       0x30 lib/i2c/i2c.o
+                0x0000130a                i2c_tx_start
+ .text.i2c_tx_address
+                0x0000133a       0x5e lib/i2c/i2c.o
+                0x0000133a                i2c_tx_address
+ .text.i2c_tx_byte
+                0x00001398       0x38 lib/i2c/i2c.o
+                0x00001398                i2c_tx_byte
+ .text.i2c_tx_stop
+                0x000013d0       0x14 lib/i2c/i2c.o
+                0x000013d0                i2c_tx_stop
+ .text.oledSendStart
+                0x000013e4       0x14 lib/ssd1306/SSD1306.o
+                0x000013e4                oledSendStart
+ .text.oledSendStop
+                0x000013f8        0x6 lib/ssd1306/SSD1306.o
+                0x000013f8                oledSendStop
+ .text.oledSendByte
+                0x000013fe        0x6 lib/ssd1306/SSD1306.o
+                0x000013fe                oledSendByte
+ .text.oledSendCommand
+                0x00001404       0x1e lib/ssd1306/SSD1306.o
+                0x00001404                oledSendCommand
+ .text.OLED_Clear
+                0x00001422       0x80 lib/ssd1306/SSD1306.o
+                0x00001422                OLED_Clear
+ .text.OLED_Init
+                0x000014a2       0xa0 lib/ssd1306/SSD1306.o
+                0x000014a2                OLED_Init
+ .text.OLED_SetCursor
+                0x00001542       0x50 lib/ssd1306/SSD1306.o
+                0x00001542                OLED_SetCursor
+ .text.OLED_GoToNextLine
+                0x00001592       0x18 lib/ssd1306/SSD1306.o
+                0x00001592                OLED_GoToNextLine
+ .text.OLED_DisplayChar
+                0x000015aa       0x6c lib/ssd1306/SSD1306.o
+                0x000015aa                OLED_DisplayChar
+ .text.OLED_DisplayString
+                0x00001616       0x1c lib/ssd1306/SSD1306.o
+                0x00001616                OLED_DisplayString
+ .text.OLED_DisplayNumber
+                0x00001632      0x13a lib/ssd1306/SSD1306.o
+                0x00001632                OLED_DisplayNumber
+ .text.OLED_DisplayFloatNumber
+                0x0000176c       0x8c lib/ssd1306/SSD1306.o
+                0x0000176c                OLED_DisplayFloatNumber
+ .text.OLED_Printf
+                0x000017f8      0x236 lib/ssd1306/SSD1306.o
+                0x000017f8                OLED_Printf
  .text.__set_direction
-                0x00001266       0x10 include/Encoder.o
-                0x00001266                __set_direction
+                0x00001a2e       0x10 include/Encoder.o
+                0x00001a2e                __set_direction
  .text.__is_turn
-                0x00001276       0x2e include/Encoder.o
-                0x00001276                __is_turn
- .text.__reset  0x000012a4       0xb2 include/Encoder.o
-                0x000012a4                __reset
+                0x00001a3e       0x2e include/Encoder.o
+                0x00001a3e                __is_turn
+ .text.__reset  0x00001a6c       0xb2 include/Encoder.o
+                0x00001a6c                __reset
  .text.__is_right_hold
-                0x00001356       0x2c include/Encoder.o
-                0x00001356                __is_right_hold
+                0x00001b1e       0x2c include/Encoder.o
+                0x00001b1e                __is_right_hold
  .text.__is_left_hold
-                0x00001382       0x2c include/Encoder.o
-                0x00001382                __is_left_hold
+                0x00001b4a       0x2c include/Encoder.o
+                0x00001b4a                __is_left_hold
  .text.__is_press
-                0x000013ae       0x2e include/Encoder.o
-                0x000013ae                __is_press
+                0x00001b76       0x2e include/Encoder.o
+                0x00001b76                __is_press
  .text.__is_release
-                0x000013dc       0x2e include/Encoder.o
-                0x000013dc                __is_release
+                0x00001ba4       0x2e include/Encoder.o
+                0x00001ba4                __is_release
  .text.__is_click
-                0x0000140a        0x6 include/Encoder.o
-                0x0000140a                __is_click
+                0x00001bd2        0x6 include/Encoder.o
+                0x00001bd2                __is_click
  .text.__is_holded
-                0x00001410       0x2e include/Encoder.o
-                0x00001410                __is_holded
+                0x00001bd8       0x2e include/Encoder.o
+                0x00001bd8                __is_holded
  .text.__is_single
-                0x0000143e       0x2e include/Encoder.o
-                0x0000143e                __is_single
+                0x00001c06       0x2e include/Encoder.o
+                0x00001c06                __is_single
  .text.__is_double
-                0x0000146c       0x2e include/Encoder.o
-                0x0000146c                __is_double
+                0x00001c34       0x2e include/Encoder.o
+                0x00001c34                __is_double
  .text.__set_pin_mode
-                0x0000149a       0x34 include/Encoder.o
-                0x0000149a                __set_pin_mode
+                0x00001c62       0x34 include/Encoder.o
+                0x00001c62                __set_pin_mode
  .text.__set_button_pin_mode
-                0x000014ce       0x1c include/Encoder.o
-                0x000014ce                __set_button_pin_mode
+                0x00001c96       0x1c include/Encoder.o
+                0x00001c96                __set_button_pin_mode
  .text.__is_right
-                0x000014ea       0x38 include/Encoder.o
-                0x000014ea                __is_right
+                0x00001cb2       0x38 include/Encoder.o
+                0x00001cb2                __is_right
  .text.__is_left
-                0x00001522       0x38 include/Encoder.o
-                0x00001522                __is_left
- .text.__tick   0x0000155a      0x16e include/Encoder.o
-                0x0000155a                __tick
+                0x00001cea       0x38 include/Encoder.o
+                0x00001cea                __is_left
+ .text.__tick   0x00001d22      0x19e include/Encoder.o
+                0x00001d22                __tick
  .text.new_encoder
-                0x000016c8      0x10a include/Encoder.o
-                0x000016c8                new_encoder
+                0x00001ec0      0x10a include/Encoder.o
+                0x00001ec0                new_encoder
+ .text.libgcc.div
+                0x00001fca       0x44 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x00001fca                __udivmodsi4
+ .text.libgcc   0x0000200e        0xc /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000200e                __tablejump2__
  .text.libgcc.prologue
-                0x000017d2       0x38 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
-                0x000017d2                __prologue_saves__
+                0x0000201a       0x38 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_prologue.o)
+                0x0000201a                __prologue_saves__
  .text.libgcc.prologue
-                0x0000180a       0x36 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
-                0x0000180a                __epilogue_restores__
+                0x00002052       0x36 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_epilogue.o)
+                0x00002052                __epilogue_restores__
+ .text.avr-libc.fplib
+                0x00002088        0xe /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x00002088                __subsf3
+                0x0000208a                __addsf3
+ .text.avr-libc.fplib
+                0x00002096       0xcc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x000020b8                __addsf3x
+ .text.avr-libc.fplib
+                0x00002162       0x5e /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x00002162                __fixunssfsi
+ .text.avr-libc.fplib
+                0x000021c0       0x7a /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x000021c0                __floatunsisf
+                0x000021c4                __floatsisf
+ .text.avr-libc.fplib
+                0x0000223a        0xc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000223a                __fp_inf
+ .text.avr-libc.fplib
+                0x00002246        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x00002246                __fp_nan
+ .text.avr-libc.fplib
+                0x0000224c        0xe /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000224c                __fp_pscA
+ .text.avr-libc.fplib
+                0x0000225a        0xe /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000225a                __fp_pscB
+ .text.avr-libc.fplib
+                0x00002268       0x22 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x00002268                __fp_round
+ .text.avr-libc.fplib
+                0x0000228a       0x44 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000228a                __fp_split3
+                0x0000229a                __fp_splitA
+ .text.avr-libc.fplib
+                0x000022ce        0xe /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x000022ce                __fp_zero
+                0x000022d0                __fp_szero
+ .text.avr-libc.fplib
+                0x000022dc        0x8 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x000022dc                __mulsf3
+ .text.avr-libc.fplib
+                0x000022e4       0xd2 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00002302                __mulsf3x
+                0x00002308                __mulsf3_pse
  .text.avr-libc
-                0x00001840      0x25a /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
-                0x00001840                malloc
-                0x00001972                free
+                0x000023b6      0x25a /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000023b6                malloc
+                0x000024e8                free
  .text.avr-libc
-                0x00001a9a      0x1b0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
-                0x00001a9a                __ftoa_engine
+                0x00002610      0x1b0 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ftoa_engine.o)
+                0x00002610                __ftoa_engine
  .text.avr-libc
-                0x00001c4a       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
-                0x00001c4a                strnlen_P
+                0x000027c0       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x000027c0                strnlen_P
  .text.avr-libc
-                0x00001c60       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
-                0x00001c60                strnlen
+                0x000027d6       0x16 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x000027d6                strnlen
  .text.avr-libc
-                0x00001c76       0x60 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
-                0x00001c76                fputc
+                0x000027ec       0x60 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                0x000027ec                fputc
  .text.avr-libc
-                0x00001cd6       0x2c /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(printf.o)
-                0x00001cd6                printf
+                0x0000284c       0x2c /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(printf.o)
+                0x0000284c                printf
  .text.avr-libc
-                0x00001d02       0x58 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
-                0x00001d02                puts
+                0x00002878       0x58 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(puts.o)
+                0x00002878                puts
  .text.avr-libc
-                0x00001d5a       0xbc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
-                0x00001d5a                __ultoa_invert
-                0x00001e16                        . = ALIGN (0x2)
+                0x000028d0       0xbc /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x000028d0                __ultoa_invert
+                0x0000298c                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001e16        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
-                0x00001e16                exit
-                0x00001e16                _exit
+ .fini9         0x0000298c        0x0 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+                0x0000298c                exit
+                0x0000298c                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -957,17 +1168,19 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001e16        0x4 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000298c        0x4 /usr/lib/gcc/avr/13.2.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x00001e1a                        . = ALIGN (0x2)
+                0x00002990                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x00001e1a                        _etext = .
+ .jumptables.gcc.OLED_Printf
+                0x00002990       0xa8 lib/ssd1306/SSD1306.o
+                0x00002a38                        _etext = .
 
-.data           0x00800100       0x62 load address 0x00001e1a
+.data           0x00800100      0x244 load address 0x00002a38
                 0x00800100                        PROVIDE (__data_start = .)
  *(.data)
  .data          0x00800100        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
@@ -997,74 +1210,85 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.print_effect.str1.1
-                0x00800127       0x3b main.o
-                                 0x31 (size before relaxing)
+                0x00800127       0x42 main.o
+                                 0x38 (size before relaxing)
+ .rodata.OledFontTable
+                0x00800169      0x1db lib/ssd1306/SSD1306.o
+                0x00800169                OledFontTable
  .rodata.__is_right.str1.1
-                0x00800162        0x6 include/Encoder.o
+                0x00800344        0x6 include/Encoder.o
  .rodata.__is_left.str1.1
-                0x00800162        0x5 include/Encoder.o
+                0x00800344        0x5 include/Encoder.o
  *(.gnu.linkonce.r*)
-                0x00800168                        . = ALIGN (0x2)
-                0x00800162                        _edata = .
-                0x00800162                        PROVIDE (__data_end = .)
+                0x0080034a                        . = ALIGN (0x2)
+                0x00800344                        _edata = .
+                0x00800344                        PROVIDE (__data_end = .)
 
-.bss            0x00800162      0x108
-                0x00800162                        PROVIDE (__bss_start = .)
+.bss            0x00800344      0x10b
+                0x00800344                        PROVIDE (__bss_start = .)
  *(.bss)
- .bss           0x00800162        0x4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
-                0x00800162                __flp
-                0x00800164                __brkval
- .bss           0x00800166        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
-                0x00800166                __iob
+ .bss           0x00800344        0x4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00800344                __flp
+                0x00800346                __brkval
+ .bss           0x00800348        0x6 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(iob.o)
+                0x00800348                __iob
  *(.bss*)
  .bss.btn_tmr.0
-                0x0080016c        0x4 main.o
+                0x0080034e        0x4 main.o
  .bss.DelayCounter
-                0x00800170        0x1 main.o
-                0x00800170                DelayCounter
+                0x00800352        0x1 main.o
+                0x00800352                DelayCounter
  .bss.DelayBuffer
-                0x00800171       0xc8 main.o
-                0x00800171                DelayBuffer
+                0x00800353       0xc8 main.o
+                0x00800353                DelayBuffer
  .bss.output_effect
-                0x00800239        0x1 main.o
-                0x00800239                output_effect
- .bss.counter   0x0080023a        0x2 main.o
-                0x0080023a                counter
- .bss.input     0x0080023c        0x2 main.o
-                0x0080023c                input
- .bss.ADC_high  0x0080023e        0x2 main.o
-                0x0080023e                ADC_high
- .bss.ADC_low   0x00800240        0x2 main.o
-                0x00800240                ADC_low
+                0x0080041b        0x1 main.o
+                0x0080041b                output_effect
+ .bss.counter   0x0080041c        0x2 main.o
+                0x0080041c                counter
+ .bss.input     0x0080041e        0x2 main.o
+                0x0080041e                input
+ .bss.ADC_high  0x00800420        0x2 main.o
+                0x00800420                ADC_high
+ .bss.ADC_low   0x00800422        0x2 main.o
+                0x00800422                ADC_low
  .bss.button_history.0
-                0x00800242        0x2 lib/arduino/button.o
- .bss.buttons   0x00800244        0x4 lib/arduino/button.o
-                0x00800244                buttons
- .bss.servos    0x00800248       0x18 lib/arduino/servo.o
-                0x00800248                servos
- .bss.iservo    0x00800260        0x1 lib/arduino/sysclock.o
-                0x00800260                iservo
+                0x00800424        0x2 lib/arduino/button.o
+ .bss.buttons   0x00800426        0x4 lib/arduino/button.o
+                0x00800426                buttons
+ .bss.servos    0x0080042a       0x18 lib/arduino/servo.o
+                0x0080042a                servos
+ .bss.iservo    0x00800442        0x1 lib/arduino/sysclock.o
+                0x00800442                iservo
  .bss.sys_ctr_2
-                0x00800261        0x4 lib/arduino/sysclock.o
-                0x00800261                sys_ctr_2
+                0x00800443        0x4 lib/arduino/sysclock.o
+                0x00800443                sys_ctr_2
  .bss.ticks_ro_ctr
-                0x00800265        0x2 lib/arduino/sysclock.o
-                0x00800265                ticks_ro_ctr
- .bss.PINbit    0x00800267        0x1 lib/arduino/tone.o
-                0x00800267                PINbit
- .bss.PINport   0x00800268        0x2 lib/arduino/tone.o
-                0x00800268                PINport
+                0x00800447        0x2 lib/arduino/sysclock.o
+                0x00800447                ticks_ro_ctr
+ .bss.PINbit    0x00800449        0x1 lib/arduino/tone.o
+                0x00800449                PINbit
+ .bss.PINport   0x0080044a        0x2 lib/arduino/tone.o
+                0x0080044a                PINport
+ .bss.masterMode
+                0x0080044c        0x1 lib/i2c/i2c.o
+ .bss.OledCursorPos
+                0x0080044d        0x1 lib/ssd1306/SSD1306.o
+                0x0080044d                OledCursorPos
+ .bss.OledLineNum
+                0x0080044e        0x1 lib/ssd1306/SSD1306.o
+                0x0080044e                OledLineNum
  *(COMMON)
-                0x0080026a                        PROVIDE (__bss_end = .)
-                0x00001e1a                        __data_load_start = LOADADDR (.data)
-                0x00001e7c                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080044f                        PROVIDE (__bss_end = .)
+                0x00002a38                        __data_load_start = LOADADDR (.data)
+                0x00002c7c                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080026a        0x0
+.noinit         0x0080044f        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)
  *(.noinit .noinit.* .gnu.linkonce.n.*)
                 [!provide]                        PROVIDE (__noinit_end = .)
-                0x0080026a                        _end = .
-                0x0080026a                        PROVIDE (__heap_start = .)
+                0x0080044f                        _end = .
+                0x0080044f                        PROVIDE (__heap_start = .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1113,6 +1337,8 @@ END GROUP
  .comment       0x00000012       0x13 lib/arduino/tone.o
  .comment       0x00000012       0x13 lib/arduino/uart.o
  .comment       0x00000012       0x13 lib/arduino/unolib.o
+ .comment       0x00000012       0x13 lib/i2c/i2c.o
+ .comment       0x00000012       0x13 lib/ssd1306/SSD1306.o
  .comment       0x00000012       0x13 include/Encoder.o
  .comment       0x00000012       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(malloc.o)
  .comment       0x00000012       0x13 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/libc.a(fputc.o)
@@ -1143,7 +1369,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x270
+.debug_aranges  0x00000000      0x380
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x30 main.o
@@ -1164,80 +1390,94 @@ END GROUP
  .debug_aranges
                 0x00000198       0x38 lib/arduino/unolib.o
  .debug_aranges
-                0x000001d0       0xa0 include/Encoder.o
+                0x000001d0       0x50 lib/i2c/i2c.o
+ .debug_aranges
+                0x00000220       0xc0 lib/ssd1306/SSD1306.o
+ .debug_aranges
+                0x000002e0       0xa0 include/Encoder.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x24e0
+.debug_info     0x00000000     0x388e
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x55a main.o
- .debug_info    0x00000b4e      0x15f lib/arduino/button.o
- .debug_info    0x00000cad       0x9d lib/arduino/digitalRead.o
- .debug_info    0x00000d4a       0xf6 lib/arduino/pinMode.o
- .debug_info    0x00000e40      0x1f9 lib/arduino/servo.o
- .debug_info    0x00001039      0x44e lib/arduino/sysclock.o
- .debug_info    0x00001487      0x338 lib/arduino/tone.o
- .debug_info    0x000017bf      0x21c lib/arduino/uart.o
- .debug_info    0x000019db      0x1bf lib/arduino/unolib.o
- .debug_info    0x00001b9a      0x946 include/Encoder.o
+ .debug_info    0x000005f4      0x5e7 main.o
+ .debug_info    0x00000bdb      0x15f lib/arduino/button.o
+ .debug_info    0x00000d3a       0x9d lib/arduino/digitalRead.o
+ .debug_info    0x00000dd7       0xf6 lib/arduino/pinMode.o
+ .debug_info    0x00000ecd      0x1f9 lib/arduino/servo.o
+ .debug_info    0x000010c6      0x44e lib/arduino/sysclock.o
+ .debug_info    0x00001514      0x338 lib/arduino/tone.o
+ .debug_info    0x0000184c      0x21c lib/arduino/uart.o
+ .debug_info    0x00001a68      0x1bf lib/arduino/unolib.o
+ .debug_info    0x00001c27      0x1fe lib/i2c/i2c.o
+ .debug_info    0x00001e25     0x1111 lib/ssd1306/SSD1306.o
+ .debug_info    0x00002f36      0x958 include/Encoder.o
 
-.debug_abbrev   0x00000000     0x13a2
+.debug_abbrev   0x00000000     0x174b
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x212 main.o
- .debug_abbrev  0x000007b4      0x120 lib/arduino/button.o
- .debug_abbrev  0x000008d4       0x68 lib/arduino/digitalRead.o
- .debug_abbrev  0x0000093c       0xae lib/arduino/pinMode.o
- .debug_abbrev  0x000009ea      0x14f lib/arduino/servo.o
- .debug_abbrev  0x00000b39      0x222 lib/arduino/sysclock.o
- .debug_abbrev  0x00000d5b      0x17a lib/arduino/tone.o
- .debug_abbrev  0x00000ed5      0x190 lib/arduino/uart.o
- .debug_abbrev  0x00001065      0x124 lib/arduino/unolib.o
- .debug_abbrev  0x00001189      0x219 include/Encoder.o
+ .debug_abbrev  0x000005a2      0x22a main.o
+ .debug_abbrev  0x000007cc      0x120 lib/arduino/button.o
+ .debug_abbrev  0x000008ec       0x68 lib/arduino/digitalRead.o
+ .debug_abbrev  0x00000954       0xae lib/arduino/pinMode.o
+ .debug_abbrev  0x00000a02      0x14f lib/arduino/servo.o
+ .debug_abbrev  0x00000b51      0x222 lib/arduino/sysclock.o
+ .debug_abbrev  0x00000d73      0x17a lib/arduino/tone.o
+ .debug_abbrev  0x00000eed      0x190 lib/arduino/uart.o
+ .debug_abbrev  0x0000107d      0x124 lib/arduino/unolib.o
+ .debug_abbrev  0x000011a1       0xb6 lib/i2c/i2c.o
+ .debug_abbrev  0x00001257      0x2db lib/ssd1306/SSD1306.o
+ .debug_abbrev  0x00001532      0x219 include/Encoder.o
 
-.debug_line     0x00000000     0x27be
+.debug_line     0x00000000     0x3ebe
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x0000001d      0x6a5 main.o
- .debug_line    0x000006c2      0x1ae lib/arduino/button.o
- .debug_line    0x00000870       0xf2 lib/arduino/digitalRead.o
- .debug_line    0x00000962      0x1dd lib/arduino/pinMode.o
- .debug_line    0x00000b3f      0x1d8 lib/arduino/servo.o
- .debug_line    0x00000d17      0x5d4 lib/arduino/sysclock.o
- .debug_line    0x000012eb      0x439 lib/arduino/tone.o
- .debug_line    0x00001724      0x1ce lib/arduino/uart.o
- .debug_line    0x000018f2      0x19b lib/arduino/unolib.o
- .debug_line    0x00001a8d      0xd31 include/Encoder.o
+ .debug_line    0x0000001d      0x770 main.o
+ .debug_line    0x0000078d      0x1ae lib/arduino/button.o
+ .debug_line    0x0000093b       0xf2 lib/arduino/digitalRead.o
+ .debug_line    0x00000a2d      0x1dd lib/arduino/pinMode.o
+ .debug_line    0x00000c0a      0x1d8 lib/arduino/servo.o
+ .debug_line    0x00000de2      0x5d4 lib/arduino/sysclock.o
+ .debug_line    0x000013b6      0x439 lib/arduino/tone.o
+ .debug_line    0x000017ef      0x1ce lib/arduino/uart.o
+ .debug_line    0x000019bd      0x19b lib/arduino/unolib.o
+ .debug_line    0x00001b58      0x485 lib/i2c/i2c.o
+ .debug_line    0x00001fdd     0x1140 lib/ssd1306/SSD1306.o
+ .debug_line    0x0000311d      0xda1 include/Encoder.o
 
-.debug_frame    0x00000000      0x600
+.debug_frame    0x00000000      0x964
  *(.debug_frame)
- .debug_frame   0x00000000       0x90 main.o
- .debug_frame   0x00000090       0x48 lib/arduino/button.o
- .debug_frame   0x000000d8       0x24 lib/arduino/digitalRead.o
- .debug_frame   0x000000fc       0x24 lib/arduino/pinMode.o
- .debug_frame   0x00000120       0x58 lib/arduino/servo.o
- .debug_frame   0x00000178      0x178 lib/arduino/sysclock.o
- .debug_frame   0x000002f0       0x54 lib/arduino/tone.o
- .debug_frame   0x00000344       0x5c lib/arduino/uart.o
- .debug_frame   0x000003a0       0x54 lib/arduino/unolib.o
- .debug_frame   0x000003f4      0x20c include/Encoder.o
+ .debug_frame   0x00000000       0xac main.o
+ .debug_frame   0x000000ac       0x48 lib/arduino/button.o
+ .debug_frame   0x000000f4       0x24 lib/arduino/digitalRead.o
+ .debug_frame   0x00000118       0x24 lib/arduino/pinMode.o
+ .debug_frame   0x0000013c       0x58 lib/arduino/servo.o
+ .debug_frame   0x00000194      0x178 lib/arduino/sysclock.o
+ .debug_frame   0x0000030c       0x54 lib/arduino/tone.o
+ .debug_frame   0x00000360       0x5c lib/arduino/uart.o
+ .debug_frame   0x000003bc       0x54 lib/arduino/unolib.o
+ .debug_frame   0x00000410       0x84 lib/i2c/i2c.o
+ .debug_frame   0x00000494      0x2c4 lib/ssd1306/SSD1306.o
+ .debug_frame   0x00000758      0x20c include/Encoder.o
 
-.debug_str      0x00000000      0x970
+.debug_str      0x00000000      0xd8c
  *(.debug_str)
  .debug_str     0x00000000      0x208 /usr/lib/gcc/avr/13.2.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x768 main.o
-                                0x369 (size before relaxing)
- .debug_str     0x00000970      0x18c lib/arduino/button.o
- .debug_str     0x00000970      0x150 lib/arduino/digitalRead.o
- .debug_str     0x00000970      0x171 lib/arduino/pinMode.o
- .debug_str     0x00000970      0x1c3 lib/arduino/servo.o
- .debug_str     0x00000970      0x2a0 lib/arduino/sysclock.o
- .debug_str     0x00000970      0x1df lib/arduino/tone.o
- .debug_str     0x00000970      0x1bf lib/arduino/uart.o
- .debug_str     0x00000970      0x199 lib/arduino/unolib.o
- .debug_str     0x00000970      0x4c9 include/Encoder.o
+ .debug_str     0x00000208      0xb84 main.o
+                                0x399 (size before relaxing)
+ .debug_str     0x00000d8c      0x18c lib/arduino/button.o
+ .debug_str     0x00000d8c      0x150 lib/arduino/digitalRead.o
+ .debug_str     0x00000d8c      0x171 lib/arduino/pinMode.o
+ .debug_str     0x00000d8c      0x1c3 lib/arduino/servo.o
+ .debug_str     0x00000d8c      0x2a0 lib/arduino/sysclock.o
+ .debug_str     0x00000d8c      0x1df lib/arduino/tone.o
+ .debug_str     0x00000d8c      0x1bf lib/arduino/uart.o
+ .debug_str     0x00000d8c      0x199 lib/arduino/unolib.o
+ .debug_str     0x00000d8c      0x1d1 lib/i2c/i2c.o
+ .debug_str     0x00000d8c      0x54d lib/ssd1306/SSD1306.o
+ .debug_str     0x00000d8c      0x4c9 include/Encoder.o
 
 .debug_loc
  *(.debug_loc)
@@ -1267,32 +1507,36 @@ END GROUP
  *(.debug_addr)
 
 .debug_line_str
-                0x00000000      0x1e3
+                0x00000000      0x250
  *(.debug_line_str)
  .debug_line_str
-                0x00000000      0x1e3 main.o
-                                 0xc2 (size before relaxing)
+                0x00000000      0x250 main.o
+                                 0xd8 (size before relaxing)
  .debug_line_str
-                0x000001e3       0x90 lib/arduino/button.o
+                0x00000250       0x90 lib/arduino/button.o
  .debug_line_str
-                0x000001e3       0x96 lib/arduino/digitalRead.o
+                0x00000250       0x96 lib/arduino/digitalRead.o
  .debug_line_str
-                0x000001e3       0x93 lib/arduino/pinMode.o
+                0x00000250       0x93 lib/arduino/pinMode.o
  .debug_line_str
-                0x000001e3       0x97 lib/arduino/servo.o
+                0x00000250       0x97 lib/arduino/servo.o
  .debug_line_str
-                0x000001e3       0xcd lib/arduino/sysclock.o
+                0x00000250       0xcd lib/arduino/sysclock.o
  .debug_line_str
-                0x000001e3       0x90 lib/arduino/tone.o
+                0x00000250       0x90 lib/arduino/tone.o
  .debug_line_str
-                0x000001e3       0x89 lib/arduino/uart.o
+                0x00000250       0x89 lib/arduino/uart.o
  .debug_line_str
-                0x000001e3       0xab lib/arduino/unolib.o
+                0x00000250       0xab lib/arduino/unolib.o
  .debug_line_str
-                0x000001e3      0x101 include/Encoder.o
+                0x00000250       0x7e lib/i2c/i2c.o
+ .debug_line_str
+                0x00000250       0xfb lib/ssd1306/SSD1306.o
+ .debug_line_str
+                0x00000250      0x101 include/Encoder.o
 
 .debug_loclists
-                0x00000000      0xb74
+                0x00000000     0x1474
  *(.debug_loclists)
  .debug_loclists
                 0x00000000       0x2d main.o
@@ -1313,7 +1557,11 @@ END GROUP
  .debug_loclists
                 0x000006ce       0xc9 lib/arduino/unolib.o
  .debug_loclists
-                0x00000797      0x3dd include/Encoder.o
+                0x00000797      0x144 lib/i2c/i2c.o
+ .debug_loclists
+                0x000008db      0x77c lib/ssd1306/SSD1306.o
+ .debug_loclists
+                0x00001057      0x41d include/Encoder.o
 
 .debug_macro
  *(.debug_macro)
@@ -1322,28 +1570,32 @@ END GROUP
  *(.debug_names)
 
 .debug_rnglists
-                0x00000000      0x1ad
+                0x00000000      0x277
  *(.debug_rnglists)
  .debug_rnglists
-                0x00000000       0x21 main.o
+                0x00000000       0x22 main.o
  .debug_rnglists
-                0x00000021       0x19 lib/arduino/button.o
+                0x00000022       0x19 lib/arduino/button.o
  .debug_rnglists
-                0x0000003a       0x13 lib/arduino/digitalRead.o
+                0x0000003b       0x13 lib/arduino/digitalRead.o
  .debug_rnglists
-                0x0000004d       0x14 lib/arduino/pinMode.o
+                0x0000004e       0x14 lib/arduino/pinMode.o
  .debug_rnglists
-                0x00000061       0x20 lib/arduino/servo.o
+                0x00000062       0x20 lib/arduino/servo.o
  .debug_rnglists
-                0x00000081       0x4b lib/arduino/sysclock.o
+                0x00000082       0x4b lib/arduino/sysclock.o
  .debug_rnglists
-                0x000000cc       0x21 lib/arduino/tone.o
+                0x000000cd       0x21 lib/arduino/tone.o
  .debug_rnglists
-                0x000000ed       0x25 lib/arduino/uart.o
+                0x000000ee       0x25 lib/arduino/uart.o
  .debug_rnglists
-                0x00000112       0x25 lib/arduino/unolib.o
+                0x00000113       0x25 lib/arduino/unolib.o
  .debug_rnglists
-                0x00000137       0x76 include/Encoder.o
+                0x00000138       0x37 lib/i2c/i2c.o
+ .debug_rnglists
+                0x0000016f       0x92 lib/ssd1306/SSD1306.o
+ .debug_rnglists
+                0x00000201       0x76 include/Encoder.o
 
 .debug_str_offsets
  *(.debug_str_offsets)

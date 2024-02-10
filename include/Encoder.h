@@ -9,7 +9,7 @@
 #define NORMAL 0
 #define REVERSE 1
 
-#define ENCODER_DEBOUNCE 400
+#define ENCODER_DEBOUNCE 200
 #define ENCODER_SW_DEBOUNCE 500
 
 #define true 1

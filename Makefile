@@ -48,14 +48,14 @@ TARGET = main
 #  and in LIBDIR.  If you have any other (sub-)directories with code,
 #  you can add them in to SOURCES below in the wildcard statement.
 # See Note re: CPPFLAGS if using/not using LIBDIR
-SOURCES=$(wildcard *.c $(LIBDIR)/*.c) $(wildcard *.c include/*.c)
+SOURCES=$(wildcard *.c $(LIBDIR)/arduino/*.c) $(wildcard *.c $(LIBDIR)/i2c/*.c) $(wildcard *.c $(LIBDIR)/ssd1306/*.c) $(wildcard *.c include/*.c)
 OBJECTS=$(SOURCES:.c=.o)
 HEADERS=$(SOURCES:.c=.h)
 
 SOURCES+=$(wildcard *.c src/*.c)
 ## Compilation options, type man avr-gcc if you're curious. 
 ## Use this CPPFLAGS with LIBDIR if a library directory is known 
-CPPFLAGS = -DF_CPU=$(F_CPU) -DBAUD=$(BAUD) -DSOFT_RESET=$(SOFT_RESET) -I.  -I$(LIBDIR) -I include/
+CPPFLAGS = -DF_CPU=$(F_CPU) -DBAUD=$(BAUD) -DSOFT_RESET=$(SOFT_RESET) -I.  -I $(LIBDIR)/arduino -I $(LIBDIR)/i2c -I $(LIBDIR)/ssd1306  -I include/
 # use below to setup gdb and debugging
 CFLAGS = -Og -ggdb -std=gnu99 -Wall -Wundef -Werror
 # Use below to optimize size
