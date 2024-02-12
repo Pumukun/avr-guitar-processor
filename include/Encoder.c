@@ -2,6 +2,9 @@
 
 #define ENC_PRIVATE ((Private_Encoder*)(p_Encoder->private_Encoder))
 
+/** Encoder flags
+ * Flags for encoder logic
+*/
 typedef struct Encoder_flags {
     bool is_turn_f:     1;
     bool is_left_f:     1;
@@ -15,6 +18,7 @@ typedef struct Encoder_flags {
     bool reset_f:       1;
 } Encoder_flags;
 
+/// Encoder states
 enum __state {
     NO_SPIN     = 0,
     LEFT        = 1,
@@ -23,20 +27,23 @@ enum __state {
     RIGHT_HOLD  = 4
 };
 
+/** Private Encoder
+ * Private encoder struct contains main encoder fields
+*/ 
 typedef struct Private_Encoder {
-    uint8_t __OUT_A;
-    uint8_t __OUT_B;
+    uint8_t __OUT_A; 				/**< A out of encoder */
+    uint8_t __OUT_B; 				/**< B out of encoder */
 
 #ifndef NO_SWITCH
-    uint8_t __SW;
+    uint8_t __SW; 					/**< Button out of encoder */
 #endif
 
-    Encoder_flags __flags;
+    Encoder_flags __flags; 			/**< Encoder flags */
 
-    uint8_t __encoder_state;
-    uint32_t __debounce_timer;
+    uint8_t __encoder_state; 		/**< Encoder state */
+    uint32_t __debounce_timer; 		/**< Encoder spin debounce timer */
 
-    uint8_t __prev_state;
+    uint8_t __prev_state; 			/**< Previous encoder state */
 
 } Private_Encoder;
 
