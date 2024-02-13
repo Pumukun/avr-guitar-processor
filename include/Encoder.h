@@ -1,5 +1,20 @@
 /** \file Encoder.h
- * \brief Main Encoder file
+ * \brief Main Encoder file \n
+ * Usage example:
+ * \code
+int main(void) {
+	Encoder* encoder = new_encoder(A_PIN, B_PIN, SWITCH_PIN);
+
+	while(1) {
+		// for normal encoder processing
+		// call tick function in main loop
+		enc_tick(encoder);
+		if (enc_is_turn(encoder)) {
+			// Your code
+		}
+	}
+}
+ * \endcode
 */
 
 #ifndef ENCODER_H
@@ -30,7 +45,7 @@ typedef struct Encoder {
  * \param p_out_a A encoder pin
  * \param p_out_b B encoder pin
  * \param p_out_sw Encoder button pin, if NO_SWITCH is not defined
- * \return Encoder* Pointer to new Encoder
+ * \return Encoder* p_Encoder - Pointer to Encoder to new Encoder
 */ 
 #ifndef NO_SWITCH
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_sw);
@@ -40,27 +55,27 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b);
 
 /** \fn void enc_tick(Encoder* p_Encoder)
  * \brief Encoder tick function 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
 */
 void enc_tick(Encoder* p_Encoder);
 	
 /** \fn enc_set_pin_mode(Encoder* p_Encoder, bool p_mode)
  * \brief Encoder pinmode setter 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_mode **INPUT** or **INPUT_PULLUP**
 */	
 void enc_set_pin_mode(Encoder* p_Encoder, bool p_mode);
 
 /** \fn enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode) 
  * \brief Encoder button pinmode setter
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_mode **INPUT** or **INPUT_PULLUP**
 */
 void enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode);
 
 /** \fn enc_set_direction(Encoder* p_Encoder, bool p_direction) 
  * \brief Encoder direction change method 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_direction Encoder direction **NORMAL** or **REVERSE**
 */
 void enc_set_direction(Encoder* p_Encoder, bool p_direction);
@@ -68,21 +83,21 @@ void enc_set_direction(Encoder* p_Encoder, bool p_direction);
 	
 /** \fn bool enc_is_turn(Encoder* p_Encoder) 
  * \brief Check encoder turn
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns returns **true** else returns **false**
 */
 bool enc_is_turn(Encoder* p_Encoder);
 	
 /** \fn bool enc_is_right(Encoder* p_Encoder) 
  * \brief Check encoder turn right 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns right returns **true** else returns **false**
 */
 bool enc_is_right(Encoder* p_Encoder);
 	
 /** \fn enc_is_left(Encoder* p_Encoder) 
  * \brief Check encoder turn left 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns left returns **true** else returns **false**
 */
 bool enc_is_left(Encoder* p_Encoder);
@@ -91,49 +106,49 @@ bool enc_is_left(Encoder* p_Encoder);
 #ifndef NO_SWITCH
 /** \fn enc_is_right_hold(Encoder* p_Encoder) 
  * \brief Check right turn with button hold 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns right with pressed button **true** else returns **false**
 */
 bool enc_is_right_hold(Encoder* p_Encoder);
 
 /** \fn enc_is_left_hold(Encoder* p_Encoder) 
  * \brief Check left turn with button hold 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns left with pressed button **true** else returns **false**
 */
 bool enc_is_left_hold(Encoder* p_Encoder);
 
 /** \fn enc_is_release(Encoder* p_Encoder) 
  * \brief Check if button is released 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If button released returns **true** else returns **false**
 */
 bool enc_is_release(Encoder* p_Encoder);
 
 /** \fn bool enc_is_click(Encoder* p_Encoder) 
  * \brief Check encoder button click 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return Returns **true** if encoder button was clicked else returns **false**
 */
 bool enc_is_click(Encoder* p_Encoder);
 
 /** \fn bool enc_is_holded(Encoder* p_Encoder)
  * \brief Check if button is holded 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return Returns **true** if encoder button is holded else returns **false**
 */
 bool enc_is_holded(Encoder* p_Encoder);
 
 /** \fn bool enc_is_single(Encoder* p_Encoder)
  * \brief Check encoder button single click 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return Returns **true** if button was clicked once else returns **false**
 */
 bool enc_is_single(Encoder* p_Encoder);
 
 /** \fn bool enc_is_double(Encoder* p_Encoder)
  * \brief Check encoder button double click 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
  * \return Returns **true** if button was double clicked else returns **false**
 */
 bool enc_is_double(Encoder* p_Encoder);
@@ -141,7 +156,7 @@ bool enc_is_double(Encoder* p_Encoder);
 
 /** \fn void enc_reset(Encoder* p_Encoder)
  * \brief Reset encoder flags and state 
- * \param Encoder* Pointer
+ * \param Encoder* p_Encoder - Pointer to Encoder
 */
 void enc_reset(Encoder* p_Encoder);
 
