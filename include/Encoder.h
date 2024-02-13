@@ -59,21 +59,21 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b);
 */
 void enc_tick(Encoder* p_Encoder);
 	
-/** \fn enc_set_pin_mode(Encoder* p_Encoder, bool p_mode)
+/** \fn void enc_set_pin_mode(Encoder* p_Encoder, bool p_mode)
  * \brief Encoder pinmode setter 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_mode **INPUT** or **INPUT_PULLUP**
 */	
 void enc_set_pin_mode(Encoder* p_Encoder, bool p_mode);
 
-/** \fn enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode) 
+/** \fn void enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode) 
  * \brief Encoder button pinmode setter
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_mode **INPUT** or **INPUT_PULLUP**
 */
 void enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode);
 
-/** \fn enc_set_direction(Encoder* p_Encoder, bool p_direction) 
+/** \fn void enc_set_direction(Encoder* p_Encoder, bool p_direction) 
  * \brief Encoder direction change method 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \param p_direction Encoder direction **NORMAL** or **REVERSE**
@@ -95,7 +95,7 @@ bool enc_is_turn(Encoder* p_Encoder);
 */
 bool enc_is_right(Encoder* p_Encoder);
 	
-/** \fn enc_is_left(Encoder* p_Encoder) 
+/** \fn bool enc_is_left(Encoder* p_Encoder) 
  * \brief Check encoder turn left 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns left returns **true** else returns **false**
@@ -104,21 +104,21 @@ bool enc_is_left(Encoder* p_Encoder);
 
 
 #ifndef NO_SWITCH
-/** \fn enc_is_right_hold(Encoder* p_Encoder) 
+/** \fn bool enc_is_right_hold(Encoder* p_Encoder) 
  * \brief Check right turn with button hold 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns right with pressed button **true** else returns **false**
 */
 bool enc_is_right_hold(Encoder* p_Encoder);
 
-/** \fn enc_is_left_hold(Encoder* p_Encoder) 
+/** \fn bool enc_is_left_hold(Encoder* p_Encoder) 
  * \brief Check left turn with button hold 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If Encoder turns left with pressed button **true** else returns **false**
 */
 bool enc_is_left_hold(Encoder* p_Encoder);
 
-/** \fn enc_is_release(Encoder* p_Encoder) 
+/** \fn bool enc_is_release(Encoder* p_Encoder) 
  * \brief Check if button is released 
  * \param Encoder* p_Encoder - Pointer to Encoder
  * \return If button released returns **true** else returns **false**
