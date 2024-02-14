@@ -1,0 +1,390 @@
+\doxysection{include/\+Encoder.h File Reference}
+\hypertarget{Encoder_8h}{}\label{Encoder_8h}\index{include/Encoder.h@{include/Encoder.h}}
+
+
+Main \doxylink{structEncoder}{Encoder} file ~\newline
+ Usage example\+:  
+
+
+{\ttfamily \#include "{}unolib.\+h"{}}\newline
+{\ttfamily \#include "{}pin\+Mode.\+h"{}}\newline
+{\ttfamily \#include "{}digital\+Read.\+h"{}}\newline
+{\ttfamily \#include "{}sysclock.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structEncoder}{Encoder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{Encoder_8h_a1291f416b069313021b519eea62d5bf1}\label{Encoder_8h_a1291f416b069313021b519eea62d5bf1} 
+\#define {\bfseries NORMAL}~0
+\item 
+\Hypertarget{Encoder_8h_a00548cec6d104932bf79a65bac1c47e8}\label{Encoder_8h_a00548cec6d104932bf79a65bac1c47e8} 
+\#define {\bfseries REVERSE}~1
+\item 
+\Hypertarget{Encoder_8h_a619f5572ef471ae296b6972b95b7ae6f}\label{Encoder_8h_a619f5572ef471ae296b6972b95b7ae6f} 
+\#define {\bfseries ENCODER\+\_\+\+DEBOUNCE}~200
+\item 
+\Hypertarget{Encoder_8h_a4ae68213925d59d8e082bf27d7ece3f4}\label{Encoder_8h_a4ae68213925d59d8e082bf27d7ece3f4} 
+\#define {\bfseries ENCODER\+\_\+\+SW\+\_\+\+DEBOUNCE}~500
+\item 
+\Hypertarget{Encoder_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}\label{Encoder_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7} 
+\#define {\bfseries true}~1
+\item 
+\Hypertarget{Encoder_8h_a65e9886d74aaee76545e83dd09011727}\label{Encoder_8h_a65e9886d74aaee76545e83dd09011727} 
+\#define {\bfseries false}~0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{Encoder_8h_aa2754847d4405b37dc004e08cd14b175}\label{Encoder_8h_aa2754847d4405b37dc004e08cd14b175} 
+typedef short unsigned int {\bfseries bool}
+\item 
+\Hypertarget{Encoder_8h_aefe90a9b9c3700044de5961dd53c9224}\label{Encoder_8h_aefe90a9b9c3700044de5961dd53c9224} 
+typedef struct Encoder {\bfseries Encoder}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Encoder_8h_ad023174ce6784ae992bedd60224ec1e8}{new\+\_\+encoder}} (uint8\+\_\+t p\+\_\+out\+\_\+a, uint8\+\_\+t p\+\_\+out\+\_\+b, uint8\+\_\+t p\+\_\+sw)
+\begin{DoxyCompactList}\small\item\em Create new encoder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Encoder_8h_ab0bca5db84dee85fb5f56e68f1924159}{enc\+\_\+tick}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em \doxylink{structEncoder}{Encoder} tick function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Encoder_8h_a7db87408c1885c0c2c9c7ce9ba0c2250}{enc\+\_\+set\+\_\+pin\+\_\+mode}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder, bool p\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em \doxylink{structEncoder}{Encoder} pinmode setter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Encoder_8h_a98f37bc694c7b1d8b2a470717621f1af}{enc\+\_\+set\+\_\+button\+\_\+pin\+\_\+mode}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder, bool p\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em \doxylink{structEncoder}{Encoder} button pinmode setter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Encoder_8h_a49c7e1c53b9312ae2fa193e74b608599}{enc\+\_\+set\+\_\+direction}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder, bool p\+\_\+direction)
+\begin{DoxyCompactList}\small\item\em \doxylink{structEncoder}{Encoder} direction change method. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_aab5479f188eca3b9c9f961517941f277}{enc\+\_\+is\+\_\+turn}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder turn. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a5de2aaf6eadbfb5992ebb2440e9187d1}{enc\+\_\+is\+\_\+right}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder turn right. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a6d0334e37acf2dd6d27e706f6b35d2d2}{enc\+\_\+is\+\_\+left}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder turn left. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a7ad5234ffc0748cacee7526424950a35}{enc\+\_\+is\+\_\+right\+\_\+hold}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check right turn with button hold. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a1c2ce7566aa977ee4d6becdb6ba636ad}{enc\+\_\+is\+\_\+left\+\_\+hold}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check left turn with button hold. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a744286fdcdfb939a0079c7625a439f45}{enc\+\_\+is\+\_\+release}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check if button is released. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_ada0a4ce418623a5e6b2dea8846eecc32}{enc\+\_\+is\+\_\+click}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder button click. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a9f63652b97e04df9f8f7e0eb4dea560d}{enc\+\_\+is\+\_\+holded}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check if button is holded. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_ad4f0c77795f8e83ae0524a43717f7bd3}{enc\+\_\+is\+\_\+single}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder button single click. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Encoder_8h_a2c71db6c03430e087dab0ac78090cb46}{enc\+\_\+is\+\_\+double}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Check encoder button double click. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Encoder_8h_a05dfa99503eea7c26c7c468f4208279a}{enc\+\_\+reset}} (\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}p\+\_\+\+Encoder)
+\begin{DoxyCompactList}\small\item\em Reset encoder flags and state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main \doxylink{structEncoder}{Encoder} file ~\newline
+ Usage example\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{structEncoder}{Encoder}}*\ encoder\ =\ new\_encoder(A\_PIN,\ B\_PIN,\ SWITCH\_PIN);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ normal\ encoder\ processing}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ call\ tick\ function\ in\ main\ loop}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ enc\_tick(encoder);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (enc\_is\_turn(encoder))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Your\ code}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Encoder_8h_ada0a4ce418623a5e6b2dea8846eecc32}\label{Encoder_8h_ada0a4ce418623a5e6b2dea8846eecc32} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_click@{enc\_is\_click}}
+\index{enc\_is\_click@{enc\_is\_click}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_click()}{enc\_is\_click()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder button click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\bfseries{true}} if encoder button was clicked else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a2c71db6c03430e087dab0ac78090cb46}\label{Encoder_8h_a2c71db6c03430e087dab0ac78090cb46} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_double@{enc\_is\_double}}
+\index{enc\_is\_double@{enc\_is\_double}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_double()}{enc\_is\_double()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder button double click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\bfseries{true}} if button was double clicked else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a9f63652b97e04df9f8f7e0eb4dea560d}\label{Encoder_8h_a9f63652b97e04df9f8f7e0eb4dea560d} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_holded@{enc\_is\_holded}}
+\index{enc\_is\_holded@{enc\_is\_holded}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_holded()}{enc\_is\_holded()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+holded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check if button is holded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\bfseries{true}} if encoder button is holded else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a6d0334e37acf2dd6d27e706f6b35d2d2}\label{Encoder_8h_a6d0334e37acf2dd6d27e706f6b35d2d2} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_left@{enc\_is\_left}}
+\index{enc\_is\_left@{enc\_is\_left}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_left()}{enc\_is\_left()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder turn left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If \doxylink{structEncoder}{Encoder} turns left returns {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a1c2ce7566aa977ee4d6becdb6ba636ad}\label{Encoder_8h_a1c2ce7566aa977ee4d6becdb6ba636ad} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_left\_hold@{enc\_is\_left\_hold}}
+\index{enc\_is\_left\_hold@{enc\_is\_left\_hold}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_left\_hold()}{enc\_is\_left\_hold()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+left\+\_\+hold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check left turn with button hold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If \doxylink{structEncoder}{Encoder} turns left with pressed button {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a744286fdcdfb939a0079c7625a439f45}\label{Encoder_8h_a744286fdcdfb939a0079c7625a439f45} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_release@{enc\_is\_release}}
+\index{enc\_is\_release@{enc\_is\_release}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_release()}{enc\_is\_release()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check if button is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If button released returns {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a5de2aaf6eadbfb5992ebb2440e9187d1}\label{Encoder_8h_a5de2aaf6eadbfb5992ebb2440e9187d1} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_right@{enc\_is\_right}}
+\index{enc\_is\_right@{enc\_is\_right}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_right()}{enc\_is\_right()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder turn right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If \doxylink{structEncoder}{Encoder} turns right returns {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a7ad5234ffc0748cacee7526424950a35}\label{Encoder_8h_a7ad5234ffc0748cacee7526424950a35} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_right\_hold@{enc\_is\_right\_hold}}
+\index{enc\_is\_right\_hold@{enc\_is\_right\_hold}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_right\_hold()}{enc\_is\_right\_hold()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+right\+\_\+hold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check right turn with button hold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If \doxylink{structEncoder}{Encoder} turns right with pressed button {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_ad4f0c77795f8e83ae0524a43717f7bd3}\label{Encoder_8h_ad4f0c77795f8e83ae0524a43717f7bd3} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_single@{enc\_is\_single}}
+\index{enc\_is\_single@{enc\_is\_single}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_single()}{enc\_is\_single()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+single (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder button single click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\bfseries{true}} if button was clicked once else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_aab5479f188eca3b9c9f961517941f277}\label{Encoder_8h_aab5479f188eca3b9c9f961517941f277} 
+\index{Encoder.h@{Encoder.h}!enc\_is\_turn@{enc\_is\_turn}}
+\index{enc\_is\_turn@{enc\_is\_turn}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_is\_turn()}{enc\_is\_turn()}}
+{\footnotesize\ttfamily bool enc\+\_\+is\+\_\+turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Check encoder turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If \doxylink{structEncoder}{Encoder} turns returns {\bfseries{true}} else returns {\bfseries{false}} 
+\end{DoxyReturn}
+\Hypertarget{Encoder_8h_a05dfa99503eea7c26c7c468f4208279a}\label{Encoder_8h_a05dfa99503eea7c26c7c468f4208279a} 
+\index{Encoder.h@{Encoder.h}!enc\_reset@{enc\_reset}}
+\index{enc\_reset@{enc\_reset}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_reset()}{enc\_reset()}}
+{\footnotesize\ttfamily void enc\+\_\+reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Reset encoder flags and state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Encoder_8h_a98f37bc694c7b1d8b2a470717621f1af}\label{Encoder_8h_a98f37bc694c7b1d8b2a470717621f1af} 
+\index{Encoder.h@{Encoder.h}!enc\_set\_button\_pin\_mode@{enc\_set\_button\_pin\_mode}}
+\index{enc\_set\_button\_pin\_mode@{enc\_set\_button\_pin\_mode}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_set\_button\_pin\_mode()}{enc\_set\_button\_pin\_mode()}}
+{\footnotesize\ttfamily void enc\+\_\+set\+\_\+button\+\_\+pin\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder,  }\item[{bool}]{p\+\_\+mode }\end{DoxyParamCaption})}
+
+
+
+\doxylink{structEncoder}{Encoder} button pinmode setter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+{\em p\+\_\+mode} & {\bfseries{INPUT}} or {\bfseries{INPUT\+\_\+\+PULLUP}} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Encoder_8h_a49c7e1c53b9312ae2fa193e74b608599}\label{Encoder_8h_a49c7e1c53b9312ae2fa193e74b608599} 
+\index{Encoder.h@{Encoder.h}!enc\_set\_direction@{enc\_set\_direction}}
+\index{enc\_set\_direction@{enc\_set\_direction}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_set\_direction()}{enc\_set\_direction()}}
+{\footnotesize\ttfamily void enc\+\_\+set\+\_\+direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder,  }\item[{bool}]{p\+\_\+direction }\end{DoxyParamCaption})}
+
+
+
+\doxylink{structEncoder}{Encoder} direction change method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+{\em p\+\_\+direction} & \doxylink{structEncoder}{Encoder} direction {\bfseries{NORMAL}} or {\bfseries{REVERSE}} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Encoder_8h_a7db87408c1885c0c2c9c7ce9ba0c2250}\label{Encoder_8h_a7db87408c1885c0c2c9c7ce9ba0c2250} 
+\index{Encoder.h@{Encoder.h}!enc\_set\_pin\_mode@{enc\_set\_pin\_mode}}
+\index{enc\_set\_pin\_mode@{enc\_set\_pin\_mode}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_set\_pin\_mode()}{enc\_set\_pin\_mode()}}
+{\footnotesize\ttfamily void enc\+\_\+set\+\_\+pin\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder,  }\item[{bool}]{p\+\_\+mode }\end{DoxyParamCaption})}
+
+
+
+\doxylink{structEncoder}{Encoder} pinmode setter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+{\em p\+\_\+mode} & {\bfseries{INPUT}} or {\bfseries{INPUT\+\_\+\+PULLUP}} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Encoder_8h_ab0bca5db84dee85fb5f56e68f1924159}\label{Encoder_8h_ab0bca5db84dee85fb5f56e68f1924159} 
+\index{Encoder.h@{Encoder.h}!enc\_tick@{enc\_tick}}
+\index{enc\_tick@{enc\_tick}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{enc\_tick()}{enc\_tick()}}
+{\footnotesize\ttfamily void enc\+\_\+tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+Encoder }\end{DoxyParamCaption})}
+
+
+
+\doxylink{structEncoder}{Encoder} tick function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Encoder\texorpdfstring{$\ast$}{*}} & p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Encoder_8h_ad023174ce6784ae992bedd60224ec1e8}\label{Encoder_8h_ad023174ce6784ae992bedd60224ec1e8} 
+\index{Encoder.h@{Encoder.h}!new\_encoder@{new\_encoder}}
+\index{new\_encoder@{new\_encoder}!Encoder.h@{Encoder.h}}
+\doxysubsubsection{\texorpdfstring{new\_encoder()}{new\_encoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structEncoder}{Encoder}} \texorpdfstring{$\ast$}{*} new\+\_\+encoder (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{p\+\_\+out\+\_\+a,  }\item[{uint8\+\_\+t}]{p\+\_\+out\+\_\+b,  }\item[{uint8\+\_\+t}]{p\+\_\+sw }\end{DoxyParamCaption})}
+
+
+
+Create new encoder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+out\+\_\+a} & A encoder pin \\
+\hline
+{\em p\+\_\+out\+\_\+b} & B encoder pin \\
+\hline
+{\em p\+\_\+out\+\_\+sw} & \doxylink{structEncoder}{Encoder} button pin, if NO\+\_\+\+SWITCH is not defined \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encoder\texorpdfstring{$\ast$}{*} p\+\_\+\+Encoder -\/ Pointer to \doxylink{structEncoder}{Encoder} to new \doxylink{structEncoder}{Encoder} 
+\end{DoxyReturn}

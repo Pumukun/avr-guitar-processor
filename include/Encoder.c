@@ -2,6 +2,9 @@
 
 #define ENC_PRIVATE ((Private_Encoder*)(p_Encoder->private_Encoder))
 
+/** Encoder flags
+ * Flags for encoder logic
+*/
 typedef struct Encoder_flags {
     bool is_turn_f:     1;
     bool is_left_f:     1;
@@ -15,6 +18,7 @@ typedef struct Encoder_flags {
     bool reset_f:       1;
 } Encoder_flags;
 
+/// Encoder states
 enum __state {
     NO_SPIN     = 0,
     LEFT        = 1,
@@ -23,46 +27,25 @@ enum __state {
     RIGHT_HOLD  = 4
 };
 
+/** Private Encoder
+ * Private encoder struct contains main encoder fields
+*/ 
 typedef struct Private_Encoder {
-    uint8_t __OUT_A;
-    uint8_t __OUT_B;
+    uint8_t __OUT_A; 				/**< A out of encoder */
+    uint8_t __OUT_B; 				/**< B out of encoder */
 
 #ifndef NO_SWITCH
-    uint8_t __SW;
+    uint8_t __SW; 					/**< Button out of encoder */
 #endif
 
-    Encoder_flags __flags;
+    Encoder_flags __flags; 			/**< Encoder flags */
 
-    uint8_t __encoder_state;
-    uint32_t __debounce_timer;
+    uint8_t __encoder_state; 		/**< Encoder state */
+    uint32_t __debounce_timer; 		/**< Encoder spin debounce timer */
 
-    uint8_t __prev_state;
+    uint8_t __prev_state; 			/**< Previous encoder state */
 
 } Private_Encoder;
-
-void __tick(Encoder* p_Encoder);
-
-void __set_pin_mode(Encoder* p_Encoder, bool p_mode);
-void __set_button_pin_mode(Encoder* p_Encoder, bool p_mode);
-void __set_direction(Encoder* p_Encoder, bool p_direction);
-
-bool __is_turn(Encoder* p_Encoder);
-bool __is_right(Encoder* p_Encoder);
-bool __is_left(Encoder* p_Encoder);
-
-void __reset(Encoder* p_Encoder);
-
-#ifndef NO_SWITCH
-bool __is_right_hold(Encoder* p_Encoder);
-bool __is_left_hold(Encoder* p_Encoder);
-
-bool __is_release(Encoder* p_Encoder);
-bool __is_click(Encoder* p_Encoder);
-bool __is_holded(Encoder* p_Encoder);
-
-bool __is_single(Encoder* p_Encoder);
-bool __is_double(Encoder* p_Encoder);
-#endif
 
 #ifndef NO_SWITCH
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_sw) {
@@ -87,30 +70,6 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
 
     encoder->private_Encoder = (Private_Encoder*)prvt_encoder;
 
-    encoder->tick                   = &__tick;
-
-    encoder->set_pin_mode           = &__set_pin_mode;
-    encoder->set_button_pin_mode    = &__set_button_pin_mode;
-    encoder->set_direction          = &__set_direction;
-
-    encoder->is_turn                = &__is_turn;
-    encoder->is_right               = &__is_right;
-    encoder->is_left                = &__is_left;
-
-#ifndef NO_SWITCH
-    encoder->is_right_hold          = &__is_right_hold;
-    encoder->is_left_hold           = &__is_left_hold;
-
-    encoder->is_release             = &__is_release;
-    encoder->is_click               = &__is_click;
-    encoder->is_holded              = &__is_holded;
-
-    encoder->is_single              = &__is_single;
-    encoder->is_double              = &__is_double;
-#endif
-
-    encoder->reset                  = &__reset;
-
     pinMode(prvt_encoder->__OUT_A, INPUT_PULLUP);
     pinMode(prvt_encoder->__OUT_B, INPUT_PULLUP);
 
@@ -119,21 +78,21 @@ Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b) {
     return encoder;
 }
 
-void __set_pin_mode(Encoder* p_Encoder, bool p_mode) {
+void enc_set_pin_mode(Encoder* p_Encoder, bool p_mode) {
     pinMode(ENC_PRIVATE->__OUT_A, (p_mode) ? INPUT : INPUT_PULLUP);
     pinMode(ENC_PRIVATE->__OUT_B, (p_mode) ? INPUT : INPUT_PULLUP);
 }
 
-void __set_button_pin_mode(Encoder* p_Encoder, bool p_mode) {
+void enc_set_button_pin_mode(Encoder* p_Encoder, bool p_mode) {
     pinMode(ENC_PRIVATE->__SW, (p_mode) ? INPUT : INPUT_PULLUP);
 }
 
-void __set_direction(Encoder* p_Encoder, bool p_direction) {
+void enc_set_direction(Encoder* p_Encoder, bool p_direction) {
     ENC_PRIVATE->__flags.direction_f = p_direction;
 }
 
-bool __is_turn(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_turn(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_turn_f) {
         ENC_PRIVATE->__flags.is_turn_f = false;
         return true;
@@ -141,19 +100,19 @@ bool __is_turn(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_right(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
-    if (ENC_PRIVATE->__encoder_state == RIGHT) {
-        printf("right\n");
+bool enc_is_right(Encoder* p_Encoder) {
+	enc_tick(p_Encoder);
+	if (ENC_PRIVATE->__encoder_state == RIGHT) {
+		printf("right\n");
 
-        ENC_PRIVATE->__encoder_state = NO_SPIN;
-        return true;
-    }
-    return false;
+		ENC_PRIVATE->__encoder_state = NO_SPIN;
+		return true;
+	}
+	return false;
 }
 
-bool __is_left(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_left(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__encoder_state == LEFT) {
         printf("left\n");
 
@@ -163,7 +122,7 @@ bool __is_left(Encoder* p_Encoder) {
     return false;
 }
 
-void __reset(Encoder* p_Encoder) {
+void enc_reset(Encoder* p_Encoder) {
     ENC_PRIVATE->__flags.is_turn_f = false;
     ENC_PRIVATE->__flags.is_left_f = false;
     ENC_PRIVATE->__flags.is_right_f = false;
@@ -179,8 +138,8 @@ void __reset(Encoder* p_Encoder) {
 
 /* button flags handling */
 #ifndef NO_SWITCH
-bool __is_right_hold(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_right_hold(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__encoder_state == RIGHT_HOLD) {
         ENC_PRIVATE->__encoder_state = NO_SPIN;
         return true;
@@ -188,8 +147,8 @@ bool __is_right_hold(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_left_hold(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_left_hold(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__encoder_state == LEFT_HOLD) {
         ENC_PRIVATE->__encoder_state = NO_SPIN;
         return true;
@@ -197,8 +156,8 @@ bool __is_left_hold(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_release(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_release(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_release_f) {
         ENC_PRIVATE->__flags.is_release_f = false;
         return true;
@@ -206,8 +165,8 @@ bool __is_release(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_click(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_click(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_click_f) {
         ENC_PRIVATE->__flags.is_click_f = false;
         return true;
@@ -215,8 +174,8 @@ bool __is_click(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_holded(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_holded(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_holded_f) {
         ENC_PRIVATE->__flags.is_holded_f = false;
         return true;
@@ -224,8 +183,8 @@ bool __is_holded(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_single(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_single(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_single_f) {
         ENC_PRIVATE->__flags.is_single_f = false;
         return true;
@@ -233,8 +192,8 @@ bool __is_single(Encoder* p_Encoder) {
     return false;
 }
 
-bool __is_double(Encoder* p_Encoder) {
-    p_Encoder->tick(p_Encoder);
+bool enc_is_double(Encoder* p_Encoder) {
+    enc_tick(p_Encoder);
     if (ENC_PRIVATE->__flags.is_double_f) {
         ENC_PRIVATE->__flags.is_double_f = false;
         return true;
@@ -245,7 +204,7 @@ bool __is_double(Encoder* p_Encoder) {
 
 
 /* ==== main encoder logic ==== */
-void __tick(Encoder* p_Encoder) {
+void enc_tick(Encoder* p_Encoder) {
     uint32_t tmp_millis = millis();
     uint32_t debounce_delta = tmp_millis - ENC_PRIVATE->__debounce_timer;
 

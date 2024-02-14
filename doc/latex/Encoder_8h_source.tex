@@ -1,0 +1,71 @@
+\doxysection{Encoder.\+h}
+\hypertarget{Encoder_8h_source}{}\label{Encoder_8h_source}\index{include/Encoder.h@{include/Encoder.h}}
+\mbox{\hyperlink{Encoder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ ENCODER\_H}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ ENCODER\_H}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}unolib.h"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}pinMode.h"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}digitalRead.h"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}sysclock.h"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ NORMAL\ 0}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ REVERSE\ 1}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ENCODER\_DEBOUNCE\ 200}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ENCODER\_SW\_DEBOUNCE\ 500}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ true\ 1}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ false\ 0}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bool;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structEncoder}{Encoder}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}*\ private\_Encoder;}
+\DoxyCodeLine{00041\ \}\ \mbox{\hyperlink{structEncoder}{Encoder}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#ifndef\ NO\_SWITCH}}
+\DoxyCodeLine{00051\ \mbox{\hyperlink{structEncoder}{Encoder}}*\ \mbox{\hyperlink{Encoder_8h_ad023174ce6784ae992bedd60224ec1e8}{new\_encoder}}(uint8\_t\ p\_out\_a,\ uint8\_t\ p\_out\_b,\ uint8\_t\ p\_sw);}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{structEncoder}{Encoder}}*\ \mbox{\hyperlink{Encoder_8h_ad023174ce6784ae992bedd60224ec1e8}{new\_encoder}}(uint8\_t\ p\_out\_a,\ uint8\_t\ p\_out\_b);}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Encoder_8h_ab0bca5db84dee85fb5f56e68f1924159}{enc\_tick}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00061\ \ \ \ \ }
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Encoder_8h_a7db87408c1885c0c2c9c7ce9ba0c2250}{enc\_set\_pin\_mode}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder,\ \textcolor{keywordtype}{bool}\ p\_mode);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Encoder_8h_a98f37bc694c7b1d8b2a470717621f1af}{enc\_set\_button\_pin\_mode}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder,\ \textcolor{keywordtype}{bool}\ p\_mode);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Encoder_8h_a49c7e1c53b9312ae2fa193e74b608599}{enc\_set\_direction}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder,\ \textcolor{keywordtype}{bool}\ p\_direction);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ }
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_aab5479f188eca3b9c9f961517941f277}{enc\_is\_turn}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00090\ \ \ \ \ }
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a5de2aaf6eadbfb5992ebb2440e9187d1}{enc\_is\_right}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a6d0334e37acf2dd6d27e706f6b35d2d2}{enc\_is\_left}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#ifndef\ NO\_SWITCH}}
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a7ad5234ffc0748cacee7526424950a35}{enc\_is\_right\_hold}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a1c2ce7566aa977ee4d6becdb6ba636ad}{enc\_is\_left\_hold}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a744286fdcdfb939a0079c7625a439f45}{enc\_is\_release}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_ada0a4ce418623a5e6b2dea8846eecc32}{enc\_is\_click}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a9f63652b97e04df9f8f7e0eb4dea560d}{enc\_is\_holded}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_ad4f0c77795f8e83ae0524a43717f7bd3}{enc\_is\_single}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00154\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Encoder_8h_a2c71db6c03430e087dab0ac78090cb46}{enc\_is\_double}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00161\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Encoder_8h_a05dfa99503eea7c26c7c468f4208279a}{enc\_reset}}(\mbox{\hyperlink{structEncoder}{Encoder}}*\ p\_Encoder);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ENCODER\_H}}
+
+\end{DoxyCode}

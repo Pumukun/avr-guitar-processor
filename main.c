@@ -112,7 +112,7 @@ int main(void) {
     print_effect();
 
     while(1) {
-        enc->tick(enc);
+        enc_tick(enc);
 
         static uint32_t btn_tmr;
         if (!digitalRead(PUSHBUTTON_1) && millis() - btn_tmr >= 500) {
@@ -127,34 +127,34 @@ int main(void) {
             print_effect();
         }
 
-        if (enc->is_left(enc)) { 
+        if (enc_is_left(enc)) { 
             counter = counter - 1;
             output_effect = output_effect - 1;
             output_effect = output_effect % 4;
             print_effect();
         }
-        if (enc->is_right(enc)) {
+        if (enc_is_right(enc)) {
             counter = counter + 1;
             output_effect = output_effect + 1;
             output_effect = output_effect % 4;
             print_effect();
         }
 
-        if (enc->is_left_hold(enc)) {
+        if (enc_is_left_hold(enc)) {
             counter = counter - 5;
             output_effect = output_effect - 1;
             output_effect = output_effect % 4;
             print_effect();
         }
-        if (enc->is_right_hold(enc)) {
+        if (enc_is_right_hold(enc)) {
             counter = counter + 5;
             output_effect = output_effect + 1;
             output_effect = output_effect % 4;
             print_effect();
         }
 
-        if (enc->is_single(enc)) printf("single\n");
-        if (enc->is_double(enc)) printf("double\n");
+        if (enc_is_single(enc)) printf("single\n");
+        if (enc_is_double(enc)) printf("double\n");
         
         /*
         if (enc->is_press(enc)) {

@@ -32,8 +32,14 @@
       "main.o",
       "main.c"
     ],
+<<<<<<< HEAD
+    "directory": "/home/pumukun/github/avr-guitar-processor",
+    "file": "/home/pumukun/github/avr-guitar-processor/main.c",
+    "output": "/home/pumukun/github/avr-guitar-processor/main.o"
+=======
     "directory": "/home/pumukun/github/AVR-fun",
     "file": "/home/pumukun/github/AVR-fun/main.c",
     "output": "/home/pumukun/github/AVR-fun/main.o"
+>>>>>>> main
   }
 ]
