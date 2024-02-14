@@ -1,0 +1,39 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/avr-gcc",
+      "-Og",
+      "-ggdb",
+      "-std=gnu99",
+      "-Wall",
+      "-Wundef",
+      "-Werror",
+      "-funsigned-char",
+      "-funsigned-bitfields",
+      "-fpack-struct",
+      "-fshort-enums",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-DF_CPU=16000000UL",
+      "-DBAUD=250000UL",
+      "-DSOFT_RESET=0",
+      "-I.",
+      "-I",
+      "lib/arduino",
+      "-I",
+      "lib/i2c",
+      "-I",
+      "lib/ssd1306",
+      "-I",
+      "include/",
+      "-mmcu=atmega328p",
+      "-c",
+      "-o",
+      "main.o",
+      "main.c"
+    ],
+    "directory": "/home/pumukun/github/AVR-fun",
+    "file": "/home/pumukun/github/AVR-fun/main.c",
+    "output": "/home/pumukun/github/AVR-fun/main.o"
+  }
+]

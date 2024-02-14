@@ -14,8 +14,6 @@
 
 typedef uint8_t byte;
 
-#define USE_MICRO_WIRE
-
 #define OLED_WIDTH 128
 #define OLED_HEIGHT 64
 
