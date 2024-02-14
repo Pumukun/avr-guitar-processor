@@ -40,6 +40,7 @@ typedef struct Encoder {
     void* private_Encoder;
 } Encoder;
 
+#ifndef NO_SWITCH
 /** \fn Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_out_sw)
  * \brief Create new encoder 
  * \param p_out_a A encoder pin
@@ -47,7 +48,6 @@ typedef struct Encoder {
  * \param p_out_sw Encoder button pin, if NO_SWITCH is not defined
  * \return Encoder* p_Encoder - Pointer to Encoder to new Encoder
 */ 
-#ifndef NO_SWITCH
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b, uint8_t p_sw);
 #else
 Encoder* new_encoder(uint8_t p_out_a, uint8_t p_out_b);
