@@ -37,7 +37,7 @@ int main(void) {
 typedef short unsigned int bool;
 
 typedef struct Encoder {
-    void* private_Encoder;
+	void* private_Encoder;
 } Encoder;
 
 #ifndef NO_SWITCH
