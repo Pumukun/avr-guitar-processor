@@ -132,7 +132,7 @@ all_clean:
 	rm -f *.elf *.hex *.obj *.o *.d *.eep *.lst *.lss *.sym *.map *~ *.eeprom core
 
 LIB_clean:
-	rm -f $(LIBDIR)/*.o
+	rm -f $(LIBDIR)/**/*.o
 	rm -rf include/*.o
 
 ##########------------------------------------------------------##########
