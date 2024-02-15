@@ -17,13 +17,6 @@ typedef uint8_t byte;
 #define OLED_WIDTH 128
 #define OLED_HEIGHT 64
 
-#define PWM_FREQ 0x00FF // pwm frequency - 31.3KHz
-#define PWM_MODE 0 // Fast (1) or Phase Correct (0)
-#define PWM_QTY 2 // 2 PWMs in parallel
-
-uint16_t ADC_low, ADC_high;
-int16_t input;
-
 #define PUSHBUTTON_1 4
 #define PUSHBUTTON_2 2
 
@@ -34,15 +27,6 @@ int16_t input;
 
 // ---- Encoder vars ----
 volatile int counter = 0;
-
-typedef enum Effect : uint8_t {
-	CLEAN,
-	DISTORTION,
-	DELAY,
-	BIT_CRUSHER
-} Effect;
-
-volatile Effect output_effect; 
 
 // Distortion effect variables
 uint16_t distortion_threshold = 6000;
@@ -92,19 +76,6 @@ int main(void) {
 	pinMode(PUSHBUTTON_2, INPUT_PULLUP);
 
 	Encoder* enc = new_encoder(OUT_A, OUT_B, SW);
-
-	// setup ADC- configured to be reading automatically the hole time.
-	ADMUX = 0x60; // left adjust, adc0, internal vcc
-	ADCSRA = 0xe5; // turn on adc, ck/32, auto trigger
-	ADCSRB = 0x07; // t1 capture for trigger
-	DIDR0 = 0x01; // turn off digital inputs for adc0
-
-	TCCR1A = (((PWM_QTY - 1) << 5) | 0x80 | (PWM_MODE << 1)); //
-	TCCR1B = ((PWM_MODE << 3) | 0x11); // ck/1
-	TIMSK1 = 0x20; // interrupt on capture interrupt
-	ICR1H = (PWM_FREQ >> 8);
-	ICR1L = (PWM_FREQ & 0xff);
-	DDRB |= ((PWM_QTY << 1) | 0x02); // turn on outputs
 	
 	sei();
 
