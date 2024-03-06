@@ -11,6 +11,7 @@
 #include "SSD1306.h"
 
 #include "Encoder.h"
+#include "DSP.h"
 
 typedef uint8_t byte;
 
@@ -40,6 +41,7 @@ uint8_t Delay_Depth = MAX_DELAY;
 // Bit crusher variables
 byte bit_depth = 2;
 
+Effect output_effect;
 
 void print_effect() {
 	char* effect_label = "";
@@ -129,6 +131,7 @@ int main(void) {
 	}
 }
 
+/*
 ISR(TIMER1_CAPT_vect) {
 	// read the ADC input signal data: 2 bytes Low and High.
 	ADC_low = ADCL; // Low byte need to be fetched first
@@ -169,4 +172,4 @@ ISR(TIMER1_CAPT_vect) {
 	OCR1AL = ((input + 0x8000) >> 8);
 	OCR1BL = input;
 }
-
+*/

@@ -31,9 +31,6 @@ int main(void) {
 #define ENCODER_DEBOUNCE 200
 #define ENCODER_SW_DEBOUNCE 500
 
-#define true 1
-#define false 0
-
 typedef short unsigned int bool;
 
 typedef struct Encoder {

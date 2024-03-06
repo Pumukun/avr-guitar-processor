@@ -26,6 +26,7 @@ enum {INPUT, OUTPUT, INPUT_PULLUP};
 enum {LOW, HIGH, TOG};
 enum {A0, A1, A2, A3, A4, A5};
 enum {FALSE, TRUE};
+enum {false, true};
 
 uint16_t d_analogRead(uint8_t pin) ;
 uint8_t constrain8_t(uint8_t value, uint8_t min, uint8_t max);

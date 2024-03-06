@@ -6,6 +6,10 @@
 #ifndef DSP_H
 #define DSP_H
 
+#include "unolib.h"
+#include "map.h"
+#include "sysclock.h"
+
 // PWM setup
 #define PWM_FREQ 0x00FF 					///< pwm frequency - 31.3KHz
 #define PWM_MODE 0							///< Fast (1) or Phase Correct (0)
@@ -23,11 +27,11 @@ typedef enum Effect : uint8_t {
 } Effect;
 
 typedef struct DSP {
-	volatile uint16_t ADC_low;				///< Low output byte
-	volatile uint16_t ADC_high;				///< High output byte
-	int16_t input;						///< Input signal
-	volatile Effect output_effect			///< output Effect
-	volatile uint8_t master_volume;			///< Master Volume
+	uint16_t ADC_low;						///< Low output byte
+	uint16_t ADC_high;						///< High output byte
+	int16_t input;							///< Input signal
+	Effect output_effect;					///< output Effect
+	uint8_t master_volume;					///< Master Volume
 } DSP;
 
 /** \fn void DSP_init(void)

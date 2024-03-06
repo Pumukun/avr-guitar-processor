@@ -2,10 +2,12 @@
 
 struct Clean_config {
 	uint8_t state_f: 1;
+	uint8_t volume;
 } __Clean_conf = {true};
 
 struct Distortion_config {
 	uint8_t state_f: 1;
+	uint16_t threshold;
 } __Distortion_conf = {false};
 
 struct Delay_config {
@@ -14,10 +16,11 @@ struct Delay_config {
 
 struct Bit_Crusher_config {
 	uint8_t state_f: 1;
+	uint8_t bit_depth;
 } __Bit_Crusher_conf = {false};
 
 
-static DSP* __DSP = (DSP*)malloc(sizeof(DSP));
+static volatile DSP __DSP;
 
 
 void DSP_init(void) {
@@ -34,18 +37,20 @@ void DSP_init(void) {
 	ICR1L = (PWM_FREQ & 0xff);
 	DDRB |= ((PWM_QTY << 1) | 0x02);	// turn on outputs
 
-	__DSP->output_effect = CLEAN;
+	__DSP.output_effect = CLEAN;
+	__DSP.master_volume = 128;
 }
 
 void __DSP_read_input(void) {
-	__DSP->ADC_low = ADCL;
-	__DSP->ADC_high = ADCH;
+	__DSP.ADC_low = ADCL;
+	__DSP.ADC_high = ADCH;
 }
 
 void __DSP_send_output(void) {
-	OCR1AL = ((__DSP->input + 0x8000) >> 8);
-	OCR1BL = __DSP->input;
+	__DSP.input = map(__DSP.input, -32768, 32768, -__DSP.master_volume, __DSP.master_volume);
 
+	OCR1AL = ((__DSP.input + 0x8000) >> 8);
+	OCR1BL = __DSP.input;
 }
 
 ISR(TIMER1_CAPT_vect) {
