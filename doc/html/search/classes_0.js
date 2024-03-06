@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['encoder_0',['Encoder',['../structEncoder.html',1,'']]],
-  ['encoder_5fflags_1',['Encoder_flags',['../structEncoder__flags.html',1,'']]]
+  ['bit_5fcrusher_5fconfig_0',['Bit_Crusher_config',['../structBit__Crusher__config.html',1,'']]]
 ];

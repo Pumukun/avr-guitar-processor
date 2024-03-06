@@ -3,7 +3,7 @@
 
 struct Clean_config {
 	uint8_t state_f: 1;
-	uint8_t volume;
+	uint16_t volume;
 } __Clean_conf = {true};
 
 struct Distortion_config {
@@ -13,12 +13,15 @@ struct Distortion_config {
 
 struct Delay_config {
 	uint8_t state_f: 1;
-} __Delay_conf = {false};
+	uint8_t buffer[MAX_DELAY];
+	uint8_t counter;
+	uint8_t depth;
+} __Delay_conf = {false, {}, 0, MAX_DELAY};
 
 struct Bit_Crusher_config {
 	uint8_t state_f: 1;
 	uint8_t bit_depth;
-} __Bit_Crusher_conf = {false};
+} __Bit_Crusher_conf = {false, 0};
 
 
 static volatile DSP __DSP;
@@ -39,11 +42,7 @@ void DSP_init(void) {
 	DDRB |= ((PWM_QTY << 1) | 0x02);	// turn on outputs
 
 	__DSP.output_effect = CLEAN;
-	__DSP.master_volume = 1;
-}
-
-void DSP_set_master_volume(int32_t p_volume) {
-	__DSP.master_volume = p_volume;
+	__DSP.master_volume = 10000;
 }
 
 void __DSP_read_input(void) {

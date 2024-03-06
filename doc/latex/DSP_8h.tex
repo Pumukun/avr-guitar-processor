@@ -1,0 +1,99 @@
+\doxysection{include/\+DSP.h File Reference}
+\hypertarget{DSP_8h}{}\label{DSP_8h}\index{include/DSP.h@{include/DSP.h}}
+{\ttfamily \#include "{}unolib.\+h"{}}\newline
+{\ttfamily \#include "{}map.\+h"{}}\newline
+{\ttfamily \#include "{}sysclock.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDSP}{DSP}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{DSP_8h_a76fe84d83b8d236bd4f0d20d7e2ed06f}\label{DSP_8h_a76fe84d83b8d236bd4f0d20d7e2ed06f} 
+\#define {\bfseries PWM\+\_\+\+FREQ}~0x00\+FF
+\begin{DoxyCompactList}\small\item\em pwm frequency -\/ 31.\+3\+KHz \end{DoxyCompactList}\item 
+\Hypertarget{DSP_8h_ab5e3533bab20d16e08c7370af5a44222}\label{DSP_8h_ab5e3533bab20d16e08c7370af5a44222} 
+\#define {\bfseries PWM\+\_\+\+MODE}~0
+\begin{DoxyCompactList}\small\item\em Fast (1) or Phase Correct (0) \end{DoxyCompactList}\item 
+\Hypertarget{DSP_8h_a8e08f77ba0866b03f112f1d05f9c0c39}\label{DSP_8h_a8e08f77ba0866b03f112f1d05f9c0c39} 
+\#define {\bfseries PWM\+\_\+\+QTY}~2
+\begin{DoxyCompactList}\small\item\em 2 PWMs in parallel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}} \mbox{\hyperlink{DSP_8h_a99462b2ee35087a55cf4dbf3fdd6b7d2}{Effect}}
+\item 
+\Hypertarget{DSP_8h_a4929246c09ef9a464bcd384978e3d763}\label{DSP_8h_a4929246c09ef9a464bcd384978e3d763} 
+typedef struct DSP {\bfseries DSP}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{DSP_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{DSP_8h_a06fc87d81c62e9abb8790b6e5713c55b} 
+enum \{ {\bfseries OFF}
+, {\bfseries ON}
+ \}
+\item 
+enum \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a66c5c37af65c297c098d96df666bf6da}{CLEAN}}
+, \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7ac545d6ac23017a00a8eace8120d7df56}{DISTORTION}}
+, \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a1debdb60dab652d8ee4ab62c6129f487}{DELAY}}
+, \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a199bbb2ff80f6c33b63e01a43057eecb}{BIT\+\_\+\+CRUSHER}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{DSP_8h_adcda56e9c5f1f64a5fc957c8fab1cea5}{DSP\+\_\+init}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Digital Signal Processor. ~\newline
+Contains main functional for audio signal processing. 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{DSP_8h_a99462b2ee35087a55cf4dbf3fdd6b7d2}\label{DSP_8h_a99462b2ee35087a55cf4dbf3fdd6b7d2} 
+\index{DSP.h@{DSP.h}!Effect@{Effect}}
+\index{Effect@{Effect}!DSP.h@{DSP.h}}
+\doxysubsubsection{\texorpdfstring{Effect}{Effect}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}} \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}}}
+
+\doxylink{structDSP}{DSP} effects enum 
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}\label{DSP_8h_a1b3aa99617899d54a4725966aba24ff7} 
+\index{DSP.h@{DSP.h}!Effect@{Effect}}
+\index{Effect@{Effect}!DSP.h@{DSP.h}}
+\doxysubsubsection{\texorpdfstring{Effect}{Effect}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}} \+: uint8\+\_\+t}
+
+\doxylink{structDSP}{DSP} effects enum \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLEAN@{CLEAN}!DSP.h@{DSP.h}}\index{DSP.h@{DSP.h}!CLEAN@{CLEAN}}}\Hypertarget{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a66c5c37af65c297c098d96df666bf6da}\label{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a66c5c37af65c297c098d96df666bf6da} 
+CLEAN&Clean effect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DISTORTION@{DISTORTION}!DSP.h@{DSP.h}}\index{DSP.h@{DSP.h}!DISTORTION@{DISTORTION}}}\Hypertarget{DSP_8h_a1b3aa99617899d54a4725966aba24ff7ac545d6ac23017a00a8eace8120d7df56}\label{DSP_8h_a1b3aa99617899d54a4725966aba24ff7ac545d6ac23017a00a8eace8120d7df56} 
+DISTORTION&Distortion effect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DELAY@{DELAY}!DSP.h@{DSP.h}}\index{DSP.h@{DSP.h}!DELAY@{DELAY}}}\Hypertarget{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a1debdb60dab652d8ee4ab62c6129f487}\label{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a1debdb60dab652d8ee4ab62c6129f487} 
+DELAY&Delay effect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BIT\_CRUSHER@{BIT\_CRUSHER}!DSP.h@{DSP.h}}\index{DSP.h@{DSP.h}!BIT\_CRUSHER@{BIT\_CRUSHER}}}\Hypertarget{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a199bbb2ff80f6c33b63e01a43057eecb}\label{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a199bbb2ff80f6c33b63e01a43057eecb} 
+BIT\+\_\+\+CRUSHER&Bit Crusher effect. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DSP_8h_adcda56e9c5f1f64a5fc957c8fab1cea5}\label{DSP_8h_adcda56e9c5f1f64a5fc957c8fab1cea5} 
+\index{DSP.h@{DSP.h}!DSP\_init@{DSP\_init}}
+\index{DSP\_init@{DSP\_init}!DSP.h@{DSP.h}}
+\doxysubsubsection{\texorpdfstring{DSP\_init()}{DSP\_init()}}
+{\footnotesize\ttfamily void DSP\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Initialize \doxylink{structDSP}{DSP} inputs/outputs 

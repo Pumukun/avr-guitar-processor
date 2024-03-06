@@ -1,0 +1,39 @@
+\doxysection{DSP.\+h}
+\hypertarget{DSP_8h_source}{}\label{DSP_8h_source}\index{include/DSP.h@{include/DSP.h}}
+\mbox{\hyperlink{DSP_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ DSP\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ DSP\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}unolib.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}map.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}sysclock.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ PWM\ setup}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PWM\_FREQ\ 0x00FF\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PWM\_MODE\ 0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ PWM\_QTY\ 2\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{enum}\ \{OFF,\ ON\};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}}\ :\ uint8\_t\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a66c5c37af65c297c098d96df666bf6da}{CLEAN}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7ac545d6ac23017a00a8eace8120d7df56}{DISTORTION}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a1debdb60dab652d8ee4ab62c6129f487}{DELAY}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7a199bbb2ff80f6c33b63e01a43057eecb}{BIT\_CRUSHER}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \}\ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structDSP}{DSP}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structDSP_a92962a4c28ccc166adc54bbaf64aac4f}{ADC\_low}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structDSP_ad6183b49841df4a6d8b024a77c274016}{ADC\_high}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ int32\_t\ \mbox{\hyperlink{structDSP_a89302184077f7e7ceb38225525fd079f}{input}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{DSP_8h_a1b3aa99617899d54a4725966aba24ff7}{Effect}}\ \mbox{\hyperlink{structDSP_a3d473e6a6f4c283c154c209918d1e8ee}{output\_effect}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structDSP_ad2ac82f75f0762f7c1120d5fa94c22a8}{master\_volume}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \}\ \mbox{\hyperlink{structDSP}{DSP}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DSP_8h_adcda56e9c5f1f64a5fc957c8fab1cea5}{DSP\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DSP\_H}}
+
+\end{DoxyCode}

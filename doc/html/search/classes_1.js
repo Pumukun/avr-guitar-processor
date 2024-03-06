@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['private_5fencoder_0',['Private_Encoder',['../structPrivate__Encoder.html',1,'']]]
+  ['clean_5fconfig_0',['Clean_config',['../structClean__config.html',1,'']]]
 ];

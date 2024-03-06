@@ -15,8 +15,9 @@
 #define PWM_MODE 0							///< Fast (1) or Phase Correct (0)
 #define PWM_QTY 2							///< 2 PWMs in parallel
 
-#define ON 1;
-#define OFF 0;
+#define MAX_DELAY 200
+
+enum {OFF, ON};
 
 /** DSP effects enum */
 typedef enum Effect : uint8_t {

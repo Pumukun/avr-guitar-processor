@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['avr_20guitar_20processor_0',['AVR Guitar processor',['../index.html',1,'']]]
+  ['adc_5fhigh_0',['ADC_high',['../structDSP.html#ad6183b49841df4a6d8b024a77c274016',1,'DSP']]],
+  ['adc_5flow_1',['ADC_low',['../structDSP.html#a92962a4c28ccc166adc54bbaf64aac4f',1,'DSP']]],
+  ['avr_20guitar_20processor_2',['AVR Guitar processor',['../index.html',1,'']]]
 ];
