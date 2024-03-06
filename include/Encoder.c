@@ -20,11 +20,11 @@ typedef struct Encoder_flags {
 
 /// Encoder states
 enum __state {
-	NO_SPIN	 = 0,
+	NO_SPIN		= 0,
 	LEFT		= 1,
-	RIGHT	   = 2,
-	LEFT_HOLD   = 3,
-	RIGHT_HOLD  = 4
+	RIGHT		= 2,
+	LEFT_HOLD	= 3,
+	RIGHT_HOLD	= 4
 };
 
 /** Private Encoder
