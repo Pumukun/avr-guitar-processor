@@ -27,11 +27,11 @@ typedef enum Effect : uint8_t {
 } Effect;
 
 typedef struct DSP {
-	uint16_t ADC_low;						///< Low output byte
-	uint16_t ADC_high;						///< High output byte
-	int16_t input;							///< Input signal
+	uint32_t ADC_low;						///< Low output byte
+	uint32_t ADC_high;						///< High output byte
+	int32_t input;							///< Input signal
 	Effect output_effect;					///< output Effect
-	uint8_t master_volume;					///< Master Volume
+	uint32_t master_volume;					///< Master Volume
 } DSP;
 
 /** \fn void DSP_init(void)

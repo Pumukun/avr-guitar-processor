@@ -74,6 +74,8 @@ int main(void) {
 	OLED_Init();
 	OLED_Clear();
 
+	DSP_init();
+
 	pinMode(PUSHBUTTON_1, INPUT_PULLUP);
 	pinMode(PUSHBUTTON_2, INPUT_PULLUP);
 
@@ -85,7 +87,7 @@ int main(void) {
 	print_effect();
 
 	while(1) {
-		enc_tick(enc);
+		enc_tick(enc);	
 
 		static uint32_t btn_tmr;
 		if (!digitalRead(PUSHBUTTON_1) && millis() - btn_tmr >= 500) {

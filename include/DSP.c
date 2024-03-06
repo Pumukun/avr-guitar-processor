@@ -1,4 +1,5 @@
 #include "DSP.h"
+#include <stdint.h>
 
 struct Clean_config {
 	uint8_t state_f: 1;
@@ -38,7 +39,11 @@ void DSP_init(void) {
 	DDRB |= ((PWM_QTY << 1) | 0x02);	// turn on outputs
 
 	__DSP.output_effect = CLEAN;
-	__DSP.master_volume = 128;
+	__DSP.master_volume = 1;
+}
+
+void DSP_set_master_volume(int32_t p_volume) {
+	__DSP.master_volume = p_volume;
 }
 
 void __DSP_read_input(void) {
@@ -47,7 +52,9 @@ void __DSP_read_input(void) {
 }
 
 void __DSP_send_output(void) {
-	__DSP.input = map(__DSP.input, -32768, 32768, -__DSP.master_volume, __DSP.master_volume);
+	__DSP.input = ((__DSP.ADC_high << 8) | __DSP.ADC_low) + 0x8000;
+
+	__DSP.input = map(__DSP.input, -INT32_MAX, INT32_MAX, -__DSP.master_volume, __DSP.master_volume);
 
 	OCR1AL = ((__DSP.input + 0x8000) >> 8);
 	OCR1BL = __DSP.input;
